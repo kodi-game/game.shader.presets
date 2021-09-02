@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Libretro Clients\n"
-"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: 2017-08-02 23:00+8\n"
-"PO-Revision-Date: 2021-05-11 18:29+0000\n"
+"PO-Revision-Date: 2021-09-02 17:29+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Danish <https://kodi.weblate.cloud/projects/kodi-add-ons-game/game-shader-presets/da_dk/>\n"
 "Language: da_dk\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.8\n"
 
 #empty string with id 30000
 msgctxt "#30001"
@@ -24,7 +24,7 @@ msgstr "Game Boy"
 
 msgctxt "#30002"
 msgid "Replicates the 2.6-inch dot matrix screen of the Game Boy. Features the ghosting problems of the original handheld."
-msgstr ""
+msgstr "Genskaber 2,6-tommer dot matrix-skærmen fra Game Boy. Indeholder ghosting-problemerne fra den originale håndholdte."
 
 msgctxt "#30003"
 msgid "4xBR Hybrid"
@@ -36,7 +36,7 @@ msgstr "CRT-skærm"
 
 msgctxt "#30005"
 msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction and sharpening."
-msgstr ""
+msgstr "Emulerer en CRT-skærm. Har skanningslinjer, farvekorrektion, gammakorrektion og skarphed."
 
 msgctxt "#30006"
 msgid "Hylian"
@@ -44,181 +44,181 @@ msgstr "Hylian"
 
 msgctxt "#30007"
 msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction, sharpening, CRT phosphor and CRT beam effects."
-msgstr ""
+msgstr "Emulerer en CRT-skærm. Indeholder skanningslinjer, farvekorrektion, gammakorrektion, skarphed, CRT-fosfor og CRT-stråleeffekter."
 
 msgctxt "#30008"
 msgid "Royale"
-msgstr ""
+msgstr "Royale"
 
 msgctxt "#30009"
 msgid "Emulates a CRT display. Resource intensive. Features scan-lines, color correction, gamma correction, sharpening, CRT phosphor emulation, halation, refractive diffusion, curvature and anti-aliasing."
-msgstr ""
+msgstr "Emulerer en CRT-skærm. Ressourcekrævende. Indeholder skanningslinjer, farvekorrektion, gammakorrektion, skarphed, CRT-fosforemulering, halering, brydningsdiffusion, krumning og anti-aliasering."
 
 msgctxt "#30010"
 msgid "CRT Geom"
-msgstr ""
+msgstr "CRT Geom"
 
 msgctxt "#30011"
 msgid "NTSC RF"
-msgstr ""
+msgstr "NTSC RF"
 
 msgctxt "#30012"
 msgid "Replicates an analog signal through a coaxial RF connector. Features color distortion, blurring, NTSC color artifacts and dot crawl."
-msgstr ""
+msgstr "Genskaber et analogt signal gennem et coaxialt RF-stik. Indeholder farveforvrængning, sløring, NTSC-farveartefakter og punkt-kravlen."
 
 msgctxt "#30013"
 msgid "TV-out"
-msgstr ""
+msgstr "Tv-ud"
 
 msgctxt "#30014"
 msgid "NTSC Composite"
-msgstr ""
+msgstr "NTSC Composite"
 
 msgctxt "#30015"
 msgid "Replicates an analog signal through an S-Video connector. Features color distortion, blurring, NTSC color artifacts."
-msgstr ""
+msgstr "Genskaber et analogt signal via et S-Video-stik. Indeholder farveforvrængning, sløring, NTSC-farveartefakter."
 
 msgctxt "#30016"
 msgid "Replicates an analog signal through a composite connector. Features color distortion, blurring, NTSC color artifacts."
-msgstr ""
+msgstr "Genskaber et analogt signal gennem et composite stik. Indeholder farveforvrængning, sløring, NTSC-farveartefakter."
 
 #empty string with id 30017
 msgctxt "#30018"
 msgid "Scaling Shader"
-msgstr ""
+msgstr "Skalerende shader"
 
 msgctxt "#30019"
 msgid "xBR-lv2 (fast)"
-msgstr ""
+msgstr "xBR-lv2 (hurtig)"
 
 msgctxt "#30020"
 msgid "Smooths and rounds edges to reduce pixelation. Written by Hyllian."
-msgstr ""
+msgstr "Udjævner og afrunder kanter for at reducere pixelering. Skrevet af Hyllian."
 
 msgctxt "#30021"
 msgid "xBR-mlv4"
-msgstr ""
+msgstr "xBR-mlv4"
 
 msgctxt "#30022"
 msgid "Smooths and rounds edges to reduce pixelation. Image is smoother than other versions. Written by Hyllian."
-msgstr ""
+msgstr "Udjævner og afrunder kanter for at reducere pixelering. Billedet er glattere end andre versioner. Skrevet af Hyllian."
 
 msgctxt "#30024"
 msgid "Super Eagle"
-msgstr ""
+msgstr "Super Eagle"
 
 msgctxt "#30025"
 msgid "Smooths and rounds edges to reduce pixelation. Written by Derek Liauw Kie Fa."
-msgstr ""
+msgstr "Udjævner og afrunder kanter for at reducere pixelering. Skrevet af Derek Liauw Kie Fa."
 
 msgctxt "#30026"
 msgid "Game Boy Advance"
-msgstr ""
+msgstr "Game Boy Advance"
 
 msgctxt "#30027"
 msgid "Nintendo DS"
-msgstr ""
+msgstr "Nintendo DS"
 
 msgctxt "#30028"
 msgid "PlayStation Portable"
-msgstr ""
+msgstr "PlayStation Bærbar"
 
 msgctxt "#30029"
 msgid "Replicates the 4.3-inch LCD screen of the PlayStation Portable."
-msgstr ""
+msgstr "Genskaber 4,3-tommer LCD-skærmen på PlayStation Bærbar."
 
 msgctxt "#30030"
 msgid "Replecates the 3-inch LCD screen of the Nintendo DS."
-msgstr ""
+msgstr "Genskaber 3-tommer LCD-skærmen på PlayStation DS."
 
 msgctxt "#30031"
 msgid "Replicates the 2.9-inch color LCD screen of the Game Boy Advance."
-msgstr ""
+msgstr "Genskaber 2,9-tommer LCD-skærmen på Game Boy Advance."
 
 msgctxt "#30032"
 msgid "LCD Screen"
-msgstr ""
+msgstr "LDC-skærm"
 
 msgctxt "#30033"
 msgid "LCD3x"
-msgstr ""
+msgstr "LCD3x"
 
 msgctxt "#30034"
 msgid "Simulates an LCD screen. Written by Gigaherz."
-msgstr ""
+msgstr "Simulerer en LCD-skærm. Skrevet af Gigaherz."
 
 msgctxt "#30035"
 msgid "NTSC S-video"
-msgstr ""
+msgstr "NTSC S-video"
 
 msgctxt "#30036"
 msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction, sharpening, curvature, interlacing, phosphor and halation."
-msgstr ""
+msgstr "Emulerer en CRT-skærm. Indeholder skanningslinjer, farvekorrektion, gammakorrektion, skarphed, krumning, interlacing, fosfor og halering."
 
 msgctxt "#30037"
 msgid "xBR-lv3"
-msgstr ""
+msgstr "xBR-lv3"
 
 msgctxt "#30038"
 msgid "xBR-lv3 (no blend)"
-msgstr ""
+msgstr "xBR-lv3 (uden blend)"
 
 msgctxt "#30039"
 msgid "Smooths and rounds edges to reduce pixelation. Smoother than the no-blend version. Written by Hyllian."
-msgstr ""
+msgstr "Udjævner og afrunder kanter for at reducere pixelering. Billedet er mere jævnt end versionen uden blend. Skrevet af Hyllian."
 
 msgctxt "#30040"
 msgid "Smooths and rounds edges to reduce pixelation. Pixel colors are not blended together. Written by Hyllian."
-msgstr ""
+msgstr "Udjævner og afrunder kanter for at reducere pixelering. Pixelfarver blandes ikke sammen. Skrevet af Hyllian."
 
 msgctxt "#30041"
 msgid "VHS"
-msgstr ""
+msgstr "VHS"
 
 msgctxt "#30042"
 msgid "6xBZR Linear"
-msgstr ""
+msgstr "6xBZR Lineær"
 
 msgctxt "#30043"
 msgid "CRT Glow Lanczos"
-msgstr ""
+msgstr "CRT Glow Lanczos"
 
 msgctxt "#30044"
 msgid "CRT Lottes Multipass"
-msgstr ""
+msgstr "CRT Lottes Multipass"
 
 msgctxt "#30045"
 msgid "Anti-aliasing"
-msgstr ""
+msgstr "Anti-aliasering"
 
 msgctxt "#30046"
 msgid "Advanced AA"
-msgstr ""
+msgstr "Avanceret AA"
 
 msgctxt "#30047"
 msgid "AGB 001"
-msgstr ""
+msgstr "AGB 001"
 
 msgctxt "#30048"
 msgid "Color"
-msgstr ""
+msgstr "Farve"
 
 msgctxt "#30049"
 msgid "CRT Hyllian 3D"
-msgstr ""
+msgstr "CRT Hyllian 3D"
 
 msgctxt "#30050"
 msgid "Pal"
-msgstr ""
+msgstr "Pal"
 
 msgctxt "#30051"
 msgid "AdvCartoon"
-msgstr ""
+msgstr "AdvCartoon"
 
 msgctxt "#30052"
 msgid "Dot"
-msgstr ""
+msgstr "Punkt"
 
 msgctxt "#30053"
 msgid "CRT Easymode"
-msgstr ""
+msgstr "CRT Easymode"

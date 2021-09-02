@@ -5,38 +5,38 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Libretro Clients\n"
-"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: 2017-08-02 23:00+8\n"
-"PO-Revision-Date: 2017-08-03 13:00+8\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-09-02 17:29+0000\n"
+"Last-Translator: Dmitry Petrov <dimakrm361@gmail.com>\n"
+"Language-Team: Russian <https://kodi.weblate.cloud/projects/kodi-add-ons-game/game-shader-presets/ru_ru/>\n"
 "Language: ru_ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.8\n"
 
 #empty string with id 30000
 msgctxt "#30001"
 msgid "Game Boy"
-msgstr ""
+msgstr "Game Boy"
 
 msgctxt "#30002"
 msgid "Replicates the 2.6-inch dot matrix screen of the Game Boy. Features the ghosting problems of the original handheld."
-msgstr ""
+msgstr "Повторяет 2.6-дюймовый матричный экран Game Boy. Включает эффект гостинга как и в оригинальной консоли."
 
 msgctxt "#30003"
 msgid "4xBR Hybrid"
-msgstr ""
+msgstr "4xBR Hybrid"
 
 msgctxt "#30004"
 msgid "CRT Display"
-msgstr ""
+msgstr "ЭЛТ монитор"
 
 msgctxt "#30005"
 msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction and sharpening."
-msgstr ""
+msgstr "Повторяет ЭЛТ монитор. Включает линии развёртки, цветокоррекцию, гамма коррекцию и резкость."
 
 msgctxt "#30006"
 msgid "Hylian"
@@ -44,7 +44,7 @@ msgstr ""
 
 msgctxt "#30007"
 msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction, sharpening, CRT phosphor and CRT beam effects."
-msgstr ""
+msgstr "Повторяет ЭЛТ монитор. Включает линии развёртки, цветокоррекцию, гамма коррекцию, резкость, ЭЛТ-люминофор и эффекты лучей ЭЛТ."
 
 msgctxt "#30008"
 msgid "Royale"
@@ -56,100 +56,100 @@ msgstr ""
 
 msgctxt "#30010"
 msgid "CRT Geom"
-msgstr ""
+msgstr "ЭЛТ Geom"
 
 msgctxt "#30011"
 msgid "NTSC RF"
-msgstr ""
+msgstr "NTSC RF"
 
 msgctxt "#30012"
 msgid "Replicates an analog signal through a coaxial RF connector. Features color distortion, blurring, NTSC color artifacts and dot crawl."
-msgstr ""
+msgstr "Повторяет аналоговый сигнал через коксиальный RF выход. Включает искажение цвета, размытие, и другие цветовые артефакты NTSC."
 
 msgctxt "#30013"
 msgid "TV-out"
-msgstr ""
+msgstr "ТВ-выход"
 
 msgctxt "#30014"
 msgid "NTSC Composite"
-msgstr ""
+msgstr "NTSC композит"
 
 msgctxt "#30015"
 msgid "Replicates an analog signal through an S-Video connector. Features color distortion, blurring, NTSC color artifacts."
-msgstr ""
+msgstr "Повторяе аналоговый сигнал через выход S-Video. Включает искажение цвета, размытие, и цветовые артефакты NTSC."
 
 msgctxt "#30016"
 msgid "Replicates an analog signal through a composite connector. Features color distortion, blurring, NTSC color artifacts."
-msgstr ""
+msgstr "Повторяет аналоговый сигнал через композитный выход. Включает искажение цвета, размытие, и цветовые артефакты NTSC."
 
 #empty string with id 30017
 msgctxt "#30018"
 msgid "Scaling Shader"
-msgstr ""
+msgstr "Шейдер масштабирования"
 
 msgctxt "#30019"
 msgid "xBR-lv2 (fast)"
-msgstr ""
+msgstr "xBR-lv2 (быстрый)"
 
 msgctxt "#30020"
 msgid "Smooths and rounds edges to reduce pixelation. Written by Hyllian."
-msgstr ""
+msgstr "Сглаживает и округляет края, чтобы уменьшить пикселизацию. Автор: Hyllian."
 
 msgctxt "#30021"
 msgid "xBR-mlv4"
-msgstr ""
+msgstr "xBR-mlv4"
 
 msgctxt "#30022"
 msgid "Smooths and rounds edges to reduce pixelation. Image is smoother than other versions. Written by Hyllian."
-msgstr ""
+msgstr "Сглаживает и округляет края, чтобы уменьшить пикселизацию. Изображение более плавное, чем в других версиях. Автор: Hyllian."
 
 msgctxt "#30024"
 msgid "Super Eagle"
-msgstr ""
+msgstr "Super Eagle"
 
 msgctxt "#30025"
 msgid "Smooths and rounds edges to reduce pixelation. Written by Derek Liauw Kie Fa."
-msgstr ""
+msgstr "Сглаживает и округляет края, чтобы уменьшить пикселизацию. Автор: Derek Liauw Kie Fa."
 
 msgctxt "#30026"
 msgid "Game Boy Advance"
-msgstr ""
+msgstr "Game Boy Advance"
 
 msgctxt "#30027"
 msgid "Nintendo DS"
-msgstr ""
+msgstr "Nintendo DS"
 
 msgctxt "#30028"
 msgid "PlayStation Portable"
-msgstr ""
+msgstr "PlayStation Portable"
 
 msgctxt "#30029"
 msgid "Replicates the 4.3-inch LCD screen of the PlayStation Portable."
-msgstr ""
+msgstr "Повторяет 4.3-дюймовый LCD экран PlayStation Portable."
 
 msgctxt "#30030"
 msgid "Replecates the 3-inch LCD screen of the Nintendo DS."
-msgstr ""
+msgstr "Повторяет 3-дюймовый LCD экран Nintendo DS."
 
 msgctxt "#30031"
 msgid "Replicates the 2.9-inch color LCD screen of the Game Boy Advance."
-msgstr ""
+msgstr "Повторяет 2.9-дюймовый LCD экран Game Boy Advance."
 
 msgctxt "#30032"
 msgid "LCD Screen"
-msgstr ""
+msgstr "LCD экран"
 
 msgctxt "#30033"
 msgid "LCD3x"
-msgstr ""
+msgstr "LCD3x"
 
 msgctxt "#30034"
 msgid "Simulates an LCD screen. Written by Gigaherz."
-msgstr ""
+msgstr "Повторяет LCD экран. Автор: Gigaherz."
 
 msgctxt "#30035"
 msgid "NTSC S-video"
-msgstr ""
+msgstr "NTSC S-video"
 
 msgctxt "#30036"
 msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction, sharpening, curvature, interlacing, phosphor and halation."
@@ -173,7 +173,7 @@ msgstr ""
 
 msgctxt "#30041"
 msgid "VHS"
-msgstr ""
+msgstr "VHS"
 
 msgctxt "#30042"
 msgid "6xBZR Linear"
@@ -205,20 +205,20 @@ msgstr ""
 
 msgctxt "#30049"
 msgid "CRT Hyllian 3D"
-msgstr ""
+msgstr "ЭЛТ Hyllian 3D"
 
 msgctxt "#30050"
 msgid "Pal"
-msgstr ""
+msgstr "Pal"
 
 msgctxt "#30051"
 msgid "AdvCartoon"
-msgstr ""
+msgstr "AdvCartoon"
 
 msgctxt "#30052"
 msgid "Dot"
-msgstr ""
+msgstr "Dot"
 
 msgctxt "#30053"
 msgid "CRT Easymode"
-msgstr ""
+msgstr "ЭЛТ Easymode"
