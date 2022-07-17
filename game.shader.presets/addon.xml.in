@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon
   id="game.shader.presets"
-  version="19.0.1"
+  version="20.0.0"
   name="Shader Preset Support"
   provider-name="Team Kodi">
   <requires>@ADDON_DEPENDS@</requires>
@@ -10,10 +10,10 @@
     library_@PLATFORM@="@LIBRARY_FILENAME@"
     extensions="cgp|glslp|hlslp"/>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Shader Preset Support</summary>
-    <description lang="en">This library provides support for libretro "meta" shaders, or .cgp files.</description>
+    <summary lang="en_GB">Shader Preset Support</summary>
+    <description lang="en_GB">This library provides support for libretro "meta" shaders, or .cgp files.</description>
     <platform>@PLATFORM@</platform>
-    <license>GPL-2.0-or-later</license>
+    <license>GPL-3.0-or-later</license>
     <source>https://github.com/kodi-game/game.shader.presets</source>
     <assets>
     </assets>

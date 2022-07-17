@@ -31,7 +31,7 @@ CLogAddon::CLogAddon()
 
 void CLogAddon::Log(SYS_LOG_LEVEL level, const char* logline)
 {
-  AddonLog loglevel;
+  ADDON_LOG loglevel;
 
   switch (level)
   {

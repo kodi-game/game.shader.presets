@@ -25,7 +25,7 @@
 
 struct rarch_video_shader;
 
-class ATTRIBUTE_HIDDEN CShaderPreset
+class ATTR_DLL_LOCAL CShaderPreset
   : public kodi::addon::CAddonBase,
     public kodi::addon::CInstanceShaderPreset
 {
@@ -35,8 +35,7 @@ public:
 
   // CAddonBase overrides
   virtual ADDON_STATUS Create() override;
-  virtual ADDON_STATUS GetStatus() override;
-  virtual ADDON_STATUS SetSetting(const std::string& settingName, const kodi::CSettingValue& settingValue) override;
+  virtual ADDON_STATUS SetSetting(const std::string& settingName, const kodi::addon::CSettingValue& settingValue) override;
 
   // CInstanceShaderPreset overrides
   preset_file PresetFileNew(const char *path) override;

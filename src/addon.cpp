@@ -51,15 +51,10 @@ ADDON_STATUS CShaderPreset::Create()
 {
   CLog::Get().SetPipe(new CLogAddon());
 
-  return GetStatus();
-}
-
-ADDON_STATUS CShaderPreset::SetSetting(const std::string& settingName, const kodi::CSettingValue& settingValue)
-{
   return ADDON_STATUS_OK;
 }
 
-ADDON_STATUS CShaderPreset::GetStatus()
+ADDON_STATUS CShaderPreset::SetSetting(const std::string& settingName, const kodi::addon::CSettingValue& settingValue)
 {
   return ADDON_STATUS_OK;
 }
