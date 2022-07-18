@@ -23,7 +23,7 @@ environment:
 
 build_script:
   - cd ..
-  - git clone --branch retroplayer-19.5 --depth=1 https://github.com/garbear/xbmc.git
+  - git clone --branch retroplayer-20alpha2 --depth=1 https://github.com/garbear/xbmc.git
   - cd %app_id%
   - mkdir build
   - cd build
