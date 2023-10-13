@@ -82,8 +82,6 @@ msgctxt "#30016"
 msgid "Replicates an analog signal through a composite connector. Features color distortion, blurring, NTSC color artifacts."
 msgstr ""
 
-#empty string with id 30017
-
 msgctxt "#30018"
 msgid "Scaling Shader"
 msgstr ""
@@ -172,10 +170,6 @@ msgctxt "#30040"
 msgid "Smooths and rounds edges to reduce pixelation. Pixel colors are not blended together. Written by Hyllian."
 msgstr ""
 
-msgctxt "#30041"
-msgid "VHS"
-msgstr ""
-
 msgctxt "#30042"
 msgid "6xBZR Linear"
 msgstr ""
@@ -196,30 +190,22 @@ msgctxt "#30046"
 msgid "Advanced AA"
 msgstr ""
 
-msgctxt "#30047"
-msgid "AGB 001"
-msgstr ""
-
-msgctxt "#30048"
-msgid "Color"
-msgstr ""
-
-msgctxt "#30049"
-msgid "CRT Hyllian 3D"
-msgstr ""
-
-msgctxt "#30050"
-msgid "Pal"
-msgstr ""
-
-msgctxt "#30051"
-msgid "AdvCartoon"
-msgstr ""
-
 msgctxt "#30052"
 msgid "Dot"
 msgstr ""
 
 msgctxt "#30053"
 msgid "CRT Easymode"
+msgstr ""
+
+msgctxt "#30054"
+msgid "Scale2x"
+msgstr ""
+
+msgctxt "#30055"
+msgid "Scale2x Plus"
+msgstr ""
+
+msgctxt "#30056"
+msgid "xBRZ Freescale"
 msgstr ""
