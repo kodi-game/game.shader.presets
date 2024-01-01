@@ -96,7 +96,7 @@ state_tracker_t* state_tracker_init(const struct state_tracker_info *info)
 
       if (!tracker->py)
       {
-         RARCH_ERR("Failed to initialize Python script.\n");
+         printf("[ERROR] game.shader.presets :: Failed to initialize Python script.\n");
          goto error;
       }
    }
@@ -130,7 +130,7 @@ state_tracker_t* state_tracker_init(const struct state_tracker_info *info)
       {
          if (!tracker->py)
          {
-            RARCH_ERR("Python semantic was requested, but Python tracker is not loaded.\n");
+            printf("[ERROR] game.shader.presets :: Python semantic was requested, but Python tracker is not loaded.\n");
 
             free(tracker->info);
             goto error;
@@ -162,7 +162,7 @@ state_tracker_t* state_tracker_init(const struct state_tracker_info *info)
 
 error:
    /* DELETED CODE
-   RARCH_ERR("Allocation of state tracker info failed.\n");
+   printf("[ERROR] game.shader.presets :: Allocation of state tracker info failed.\n");
    */
    free(tracker);
    /* END OF ADDED CODE */

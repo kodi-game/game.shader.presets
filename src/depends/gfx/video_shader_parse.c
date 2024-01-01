@@ -30,21 +30,6 @@
 */
 #include "video_shader_parse.h"
 
-/* ADDED CODE */
-// TODO: FIX LOGGING
-#include <assert.h>
-#define RARCH_LOG(...) do { \
-   printf("[LOG] game.shader.presets :: " __VA_ARGS__); \
-} while(0)
-#define RARCH_WARN(...) do { \
-   printf("[WARN] game.shader.presets :: " __VA_ARGS__); \
-} while(0)
-#define RARCH_ERR(...) do { \
-   assert(0); \
-   printf("[ERROR] game.shader.presets :: " __VA_ARGS__); \
-} while(0)
-/* END OF ADDED CODE */
-
 #ifdef HAVE_SLANG
 #include "drivers_shader/slang_preprocess.h"
 #endif
@@ -117,7 +102,7 @@ static enum gfx_wrap_type wrap_str_to_mode(const char *wrap_mode)
          return RARCH_WRAP_MIRRORED_REPEAT;
    }
 
-   RARCH_WARN("Invalid wrapping type %s. Valid ones are: clamp_to_border (default), clamp_to_edge, repeat and mirrored_repeat. Falling back to default.\n",
+   printf("[WARN] game.shader.presets :: Invalid wrapping type %s. Valid ones are: clamp_to_border (default), clamp_to_edge, repeat and mirrored_repeat. Falling back to default.\n",
          wrap_mode);
    return RARCH_WRAP_DEFAULT;
 }
@@ -168,7 +153,7 @@ static bool video_shader_parse_pass(config_file_t *conf,
    snprintf(shader_name, sizeof(shader_name), "shader%u", i);
    if (!config_get_path(conf, shader_name, tmp_str, sizeof(tmp_str)))
    {
-      RARCH_ERR("Couldn't parse shader source (%s).\n", shader_name);
+      printf("[ERROR] game.shader.presets :: Couldn't parse shader source (%s).\n", shader_name);
       return false;
    }
 
@@ -261,7 +246,7 @@ static bool video_shader_parse_pass(config_file_t *conf,
             scale->type_x = RARCH_SCALE_ABSOLUTE;
             break;
          default:
-            RARCH_ERR("Invalid attribute.\n");
+            printf("[ERROR] game.shader.presets :: Invalid attribute.\n");
             return false;
       }
    }
@@ -282,7 +267,7 @@ static bool video_shader_parse_pass(config_file_t *conf,
             scale->type_y = RARCH_SCALE_ABSOLUTE;
             break;
          default:
-            RARCH_ERR("Invalid attribute.\n");
+            printf("[ERROR] game.shader.presets :: Invalid attribute.\n");
             return false;
       }
    }
@@ -376,7 +361,7 @@ static bool video_shader_parse_textures(config_file_t *conf,
       if (!config_get_array(conf, id, shader->lut[shader->luts].path,
                sizeof(shader->lut[shader->luts].path)))
       {
-         RARCH_ERR("Cannot find path to texture \"%s\" ...\n", id);
+         printf("[ERROR] game.shader.presets :: Cannot find path to texture \"%s\" ...\n", id);
          return false;
       }
 
@@ -472,12 +457,12 @@ bool video_shader_resolve_current_parameters(config_file_t *conf,
 
       if (!parameter)
       {
-         RARCH_WARN("[CGP/GLSLP]: Parameter %s is set in the preset, but no shader uses this parameter, ignoring.\n", id);
+         printf("[WARN] game.shader.presets :: [CGP/GLSLP]: Parameter %s is set in the preset, but no shader uses this parameter, ignoring.\n", id);
          continue;
       }
 
       if (!config_get_float(conf, id, &parameter->current))
-         RARCH_WARN("[CGP/GLSLP]: Parameter %s is not set in preset.\n", id);
+         printf("[WARN] game.shader.presets :: [CGP/GLSLP]: Parameter %s is not set in preset.\n", id);
    }
    return true;
 }
@@ -539,7 +524,7 @@ bool video_shader_resolve_parameters(config_file_t *conf,
          if (ret == 5)
             param->step = 0.1f * (param->maximum - param->minimum);
 
-         RARCH_LOG("Found #pragma parameter %s (%s) %f %f %f %f\n",
+         printf("[LOG] game.shader.presets :: Found #pragma parameter %s (%s) %f %f %f %f\n",
                param->desc, param->id, param->initial,
                param->minimum, param->maximum, param->step);
          param->current = param->initial;
@@ -609,7 +594,7 @@ static bool video_shader_parse_imports(config_file_t *conf,
 
       if (!config_get_array(conf, semantic_buf, semantic, sizeof(semantic)))
       {
-         RARCH_ERR("No semantic for import variable.\n");
+         printf("[ERROR] game.shader.presets :: No semantic for import variable.\n");
          return false;
       }
 
@@ -636,7 +621,7 @@ static bool video_shader_parse_imports(config_file_t *conf,
             var->type = RARCH_STATE_PYTHON;
             break;
          default:
-            RARCH_ERR("Invalid semantic.\n");
+            printf("[ERROR] game.shader.presets :: Invalid semantic.\n");
             return false;
       }
 
@@ -658,7 +643,7 @@ static bool video_shader_parse_imports(config_file_t *conf,
                   break;
 
                default:
-                  RARCH_ERR("Invalid input slot for import.\n");
+                  printf("[ERROR] game.shader.presets :: Invalid input slot for import.\n");
                   return false;
             }
          }
@@ -669,7 +654,7 @@ static bool video_shader_parse_imports(config_file_t *conf,
          }
          else
          {
-            RARCH_ERR("No address assigned to semantic.\n");
+            printf("[ERROR] game.shader.presets :: No address assigned to semantic.\n");
             return false;
          }
       }
@@ -708,13 +693,13 @@ bool video_shader_read_conf_cgp(config_file_t *conf, struct rarch_video_shader *
    shaders = 0;
    if (!config_get_uint(conf, "shaders", &shaders))
    {
-      RARCH_ERR("Cannot find \"shaders\" param.\n");
+      printf("[ERROR] game.shader.presets :: Cannot find \"shaders\" param.\n");
       return false;
    }
 
    if (!shaders)
    {
-      RARCH_ERR("Need to define at least 1 shader.\n");
+      printf("[ERROR] game.shader.presets :: Need to define at least 1 shader.\n");
       return false;
    }
 
