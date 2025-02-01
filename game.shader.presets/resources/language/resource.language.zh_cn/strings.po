@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.9.2\n"
 
-#empty string with id 30000
+# empty string with id 30000
 msgctxt "#30001"
 msgid "Game Boy"
 msgstr "Game Boy"
@@ -82,7 +82,7 @@ msgctxt "#30016"
 msgid "Replicates an analog signal through a composite connector. Features color distortion, blurring, NTSC color artifacts."
 msgstr "通过复合连接器复制模拟信号。具有颜色失真、模糊、NTSC 颜色瑕疵。"
 
-#empty string with id 30017
+# empty string with id 30017
 msgctxt "#30018"
 msgid "Scaling Shader"
 msgstr "缩放着色器"
