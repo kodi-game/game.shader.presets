@@ -22,7 +22,7 @@ msgid "Shader Preset Support"
 msgstr ""
 
 msgctxt "Addon Description"
-msgid "This library provides support for libretro "meta" shaders, or .cgp files."
+msgid "This library provides support for libretro meta shaders."
 msgstr ""
 
 # empty string with id 30000
