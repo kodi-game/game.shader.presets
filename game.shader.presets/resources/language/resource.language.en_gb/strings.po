@@ -16,13 +16,13 @@ msgstr ""
 "Language: en_gb\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#empty string with id 30000
+# empty string with id 30000
 
 msgctxt "#30001"
 msgid "Game Boy"
 msgstr ""
 
-#empty string with id 30002
+# empty string with id 30002
 
 msgctxt "#30003"
 msgid "4xBR Hybrid"
@@ -32,19 +32,19 @@ msgctxt "#30004"
 msgid "CRT Display"
 msgstr ""
 
-#empty string with id 30005
+# empty string with id 30005
 
 msgctxt "#30006"
 msgid "Hylian"
 msgstr ""
 
-#empty string with id 30007
+# empty string with id 30007
 
 msgctxt "#30008"
 msgid "Royale"
 msgstr ""
 
-#empty string with id 30009
+# empty string with id 30009
 
 msgctxt "#30010"
 msgid "CRT Geom"
@@ -54,7 +54,7 @@ msgctxt "#30011"
 msgid "NTSC RF"
 msgstr ""
 
-#empty string with id 30012
+# empty string with id 30012
 
 msgctxt "#30013"
 msgid "TV-out"
@@ -64,11 +64,11 @@ msgctxt "#30014"
 msgid "NTSC Composite"
 msgstr ""
 
-#empty string with id 30015
+# empty string with id 30015
 
-#empty string with id 30016
+# empty string with id 30016
 
-#empty string with id 30017
+# empty string with id 30017
 
 msgctxt "#30018"
 msgid "Scaling Shader"
@@ -78,19 +78,19 @@ msgctxt "#30019"
 msgid "xBR-lv2 (fast)"
 msgstr ""
 
-#empty string with id 30020
+# empty string with id 30020
 
 msgctxt "#30021"
 msgid "xBR-mlv4"
 msgstr ""
 
-#empty string with id 30022
+# empty string with id 30022
 
 msgctxt "#30024"
 msgid "Super Eagle"
 msgstr ""
 
-#empty string with id 30025
+# empty string with id 30025
 
 msgctxt "#30026"
 msgid "Game Boy Advance"
@@ -104,11 +104,11 @@ msgctxt "#30028"
 msgid "PlayStation Portable"
 msgstr ""
 
-#empty string with id 30029
+# empty string with id 30029
 
-#empty string with id 30030
+# empty string with id 30030
 
-#empty string with id 30031
+# empty string with id 30031
 
 msgctxt "#30032"
 msgid "LCD Screen"
@@ -118,13 +118,13 @@ msgctxt "#30033"
 msgid "LCD3x"
 msgstr ""
 
-#empty string with id 30034
+# empty string with id 30034
 
 msgctxt "#30035"
 msgid "NTSC S-video"
 msgstr ""
 
-#empty string with id 30036
+# empty string with id 30036
 
 msgctxt "#30037"
 msgid "xBR-lv3"
@@ -134,9 +134,9 @@ msgctxt "#30038"
 msgid "xBR-lv3 (no blend)"
 msgstr ""
 
-#empty string with id 30039
+# empty string with id 30039
 
-#empty string with id 30040
+# empty string with id 30040
 
 msgctxt "#30041"
 msgid "VHS"
