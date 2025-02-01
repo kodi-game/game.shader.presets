@@ -18,6 +18,6 @@
       <fanart>resources/fanart.jpg</fanart>
     </assets>
     <summary lang="en_GB">Shader Preset Support</summary>
-    <description lang="en_GB">This library provides support for libretro &quot;meta&quot; shaders, or .cgp files.</description>
+    <description lang="en_GB">This library provides support for libretro meta shaders.</description>
   </extension>
 </addon>
