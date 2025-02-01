@@ -82,4 +82,10 @@ if(CORE_SYSTEM_NAME STREQUAL osx)
   list(APPEND DEPLIBS "-framework CoreFoundation")
 endif()
 
+if(CORE_SYSTEM_NAME STREQUAL windows)
+  set(SHADERPRESETS_CUSTOM_DATA ${CMAKE_CURRENT_SOURCE_DIR}/libretro/hlsl)
+else()
+  set(SHADERPRESETS_CUSTOM_DATA ${CMAKE_CURRENT_SOURCE_DIR}/libretro/glsl)
+endif()
+
 build_addon(game.shader.presets SHADERPRESETS DEPLIBS)

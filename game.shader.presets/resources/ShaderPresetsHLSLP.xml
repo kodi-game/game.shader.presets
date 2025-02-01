@@ -1,119 +1,119 @@
 <?xml version="1.0" ?>
 <presets>
     <preset>
-        <path>libretro/hlsl/ntsc/ntsc.cgp</path>
+        <path>hlsl/ntsc/ntsc.cgp</path>
         <!-- TV-out -->
         <category>30013</category>
         <!-- NTSC RF -->
         <name>30011</name>
     </preset>
     <preset>
-        <path>libretro/hlsl/cgp/tvout/tvout+ntsc-256px-composite.cgp</path>
+        <path>hlsl/cgp/tvout/tvout+ntsc-256px-composite.cgp</path>
         <!-- TV-out -->
         <category>30013</category>
         <!-- NTSC Composite -->
         <name>30014</name>
     </preset>
     <preset>
-        <path>libretro/hlsl/cgp/tvout/tvout+ntsc-320px-svideo.cgp</path>
+        <path>hlsl/cgp/tvout/tvout+ntsc-320px-svideo.cgp</path>
         <!-- TV-out -->
         <category>30013</category>
         <!-- NTSC S-video -->
         <name>30035</name>
     </preset>
     <preset>
-        <path>libretro/hlsl/crt/4xbr-hybrid-crt-b.cgp</path>
+        <path>hlsl/crt/4xbr-hybrid-crt-b.cgp</path>
         <!-- CRT Display -->
         <category>30004</category>
         <!-- 4xBR Hybrid -->
         <name>30003</name>
     </preset>
     <preset>
-        <path>libretro/hlsl/crt/crt-geom.cgp</path>
+        <path>hlsl/crt/crt-geom.cgp</path>
         <!-- CRT Display -->
         <category>30004</category>
         <!-- CRT Geom -->
         <name>30010</name>
     </preset>
 <!--    <preset> -->
-<!--        <path>libretro/hlsl/crt/crt-hyllian-multipass.cgp</path> -->
+<!--        <path>hlsl/crt/crt-hyllian-multipass.cgp</path> -->
         <!-- CRT Display -->
 <!--        <category>30004</category> -->
         <!-- Hylian -->
 <!--        <name>30006</name> -->
 <!--    </preset> -->
 <!--    <preset> -->
-<!--        <path>libretro/hlsl/cgp/crt-royale-kurozumi.cgp</path> -->
+<!--        <path>hlsl/cgp/crt-royale-kurozumi.cgp</path> -->
         <!-- CRT Display -->
 <!--        <category>30004</category> -->
         <!-- Royale -->
 <!--        <name>30008</name> -->
 <!--    </preset> -->
     <preset>
-        <path>libretro/hlsl/handheld/lcd3x.cgp</path>
+        <path>hlsl/handheld/lcd3x.cgp</path>
         <!-- LCD Screen -->
         <category>30032</category>
         <!-- LCD3x -->
         <name>30033</name>
     </preset>
     <preset>
-        <path>libretro/hlsl/cgp/gameboy-screen-grid.cgp</path>
+        <path>hlsl/cgp/gameboy-screen-grid.cgp</path>
         <!-- LCD Screen -->
         <category>30032</category>
         <!-- Game Boy -->
         <name>30001</name>
     </preset>
     <preset>
-        <path>libretro/hlsl/handheld/lcd-grid-v2-gba-color.cgp</path>
+        <path>hlsl/handheld/lcd-grid-v2-gba-color.cgp</path>
         <!-- LCD Screen -->
         <category>30032</category>
         <!-- Game Boy Advance -->
         <name>30026</name>
     </preset>
     <preset>
-        <path>libretro/hlsl/handheld/lcd-grid-v2-nds-color.cgp</path>
+        <path>hlsl/handheld/lcd-grid-v2-nds-color.cgp</path>
         <!-- LCD Screen -->
         <category>30032</category>
         <!-- Nintendo DS -->
         <name>30027</name>
     </preset>
     <preset>
-        <path>libretro/hlsl/handheld/lcd-grid-v2-psp-color.cgp</path>
+        <path>hlsl/handheld/lcd-grid-v2-psp-color.cgp</path>
         <!-- LCD Screen -->
         <category>30032</category>
         <!-- PlayStation Portable -->
         <name>30028</name>
     </preset>
     <preset>
-        <path>libretro/hlsl/eagle/super-eagle.cgp</path>
+        <path>hlsl/eagle/super-eagle.cgp</path>
         <!-- Scaling Shader -->
         <category>30018</category>
         <!-- Super Eagle -->
         <name>30024</name>
     </preset>
     <preset>
-        <path>libretro/hlsl/xbr/xbr-lv2-fast.cgp</path>
+        <path>hlsl/xbr/xbr-lv2-fast.cgp</path>
         <!-- Scaling Shader -->
         <category>30018</category>
         <!-- xBR-lv2 -->
         <name>30019</name>
     </preset>
     <preset>
-        <path>libretro/hlsl/xbr/xbr-lv3.cgp</path>
+        <path>hlsl/xbr/xbr-lv3.cgp</path>
         <!-- Scaling Shader -->
         <category>30018</category>
         <!-- xBR-lv3 -->
         <name>30037</name>
     </preset>
     <preset>
-        <path>libretro/hlsl/xbr/xbr-lv3-noblend.cgp</path>
+        <path>hlsl/xbr/xbr-lv3-noblend.cgp</path>
         <!-- Scaling Shader -->
         <category>30018</category>
         <!-- xBR-lv3 (no blend) -->
         <name>30038</name>
     </preset>
 <!--    <preset> -->
-<!--        <path>libretro/hlsl/xbr/xbr-mlv4-multipass.cgp</path> -->
+<!--        <path>hlsl/xbr/xbr-mlv4-multipass.cgp</path> -->
         <!-- Scaling Shader -->
 <!--        <category>30018</category> -->
         <!-- xBR-mlv4 -->
