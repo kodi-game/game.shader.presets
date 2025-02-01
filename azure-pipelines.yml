@@ -6,6 +6,7 @@ trigger:
     include:
     - Omega
     - Piers
+    - testing
     - releases/*
   paths:
     include:
