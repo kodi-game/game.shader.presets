@@ -17,6 +17,14 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 "X-Generator: Weblate 5.9.2\n"
 
+msgctxt "Addon Summary"
+msgid "Shader Preset Support"
+msgstr ""
+
+msgctxt "Addon Description"
+msgid "This library provides support for libretro "meta" shaders, or .cgp files."
+msgstr ""
+
 # empty string with id 30000
 msgctxt "#30001"
 msgid "Game Boy"

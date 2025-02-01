@@ -10,8 +10,6 @@
     library_@PLATFORM@="@LIBRARY_FILENAME@"
     extensions="cgp|glslp|hlslp"/>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Shader Preset Support</summary>
-    <description lang="en_GB">This library provides support for libretro "meta" shaders, or .cgp files.</description>
     <platform>@PLATFORM@</platform>
     <license>GPL-3.0-or-later</license>
     <source>https://github.com/kodi-game/game.shader.presets</source>
@@ -19,5 +17,7 @@
       <icon>resources/icon.png</icon>
       <fanart>resources/fanart.jpg</fanart>
     </assets>
+    <summary lang="en_GB">Shader Preset Support</summary>
+    <description lang="en_GB">This library provides support for libretro &quot;meta&quot; shaders, or .cgp files.</description>
   </extension>
 </addon>
