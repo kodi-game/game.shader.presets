@@ -218,10 +218,7 @@ void fill_pathname_application_path(char *s, size_t len)
    if (!len)
       return;
 
-#ifdef _WIN32
-   ret    = GetModuleFileName(GetModuleHandle(NULL), s, len - 1);
-   s[ret] = '\0';
-#elif defined(__APPLE__)
+#if defined(__APPLE__)
    if (bundle)
    {
       CFURLRef bundle_url = CFBundleCopyBundleURL(bundle);
@@ -249,7 +246,7 @@ void fill_pathname_application_path(char *s, size_t len)
       strlcpy(s, buff, len);
 
    free(buff);
-#else
+#elif !defined(_WIN32)
    {
       pid_t pid;
       static const char *exts[] = { "exe", "file", "path/a.out" };
