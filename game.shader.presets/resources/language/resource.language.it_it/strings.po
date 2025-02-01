@@ -22,10 +22,6 @@ msgctxt "#30001"
 msgid "Game Boy"
 msgstr "Game Boy"
 
-msgctxt "#30002"
-msgid "Replicates the 2.6-inch dot matrix screen of the Game Boy. Features the ghosting problems of the original handheld."
-msgstr ""
-
 msgctxt "#30003"
 msgid "4xBR Hybrid"
 msgstr ""
@@ -34,24 +30,12 @@ msgctxt "#30004"
 msgid "CRT Display"
 msgstr ""
 
-msgctxt "#30005"
-msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction and sharpening."
-msgstr ""
-
 msgctxt "#30006"
 msgid "Hylian"
 msgstr ""
 
-msgctxt "#30007"
-msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction, sharpening, CRT phosphor and CRT beam effects."
-msgstr ""
-
 msgctxt "#30008"
 msgid "Royale"
-msgstr ""
-
-msgctxt "#30009"
-msgid "Emulates a CRT display. Resource intensive. Features scan-lines, color correction, gamma correction, sharpening, CRT phosphor emulation, halation, refractive diffusion, curvature and anti-aliasing."
 msgstr ""
 
 msgctxt "#30010"
@@ -62,24 +46,12 @@ msgctxt "#30011"
 msgid "NTSC RF"
 msgstr ""
 
-msgctxt "#30012"
-msgid "Replicates an analog signal through a coaxial RF connector. Features color distortion, blurring, NTSC color artifacts and dot crawl."
-msgstr ""
-
 msgctxt "#30013"
 msgid "TV-out"
 msgstr ""
 
 msgctxt "#30014"
 msgid "NTSC Composite"
-msgstr ""
-
-msgctxt "#30015"
-msgid "Replicates an analog signal through an S-Video connector. Features color distortion, blurring, NTSC color artifacts."
-msgstr ""
-
-msgctxt "#30016"
-msgid "Replicates an analog signal through a composite connector. Features color distortion, blurring, NTSC color artifacts."
 msgstr ""
 
 # empty string with id 30017
@@ -91,24 +63,12 @@ msgctxt "#30019"
 msgid "xBR-lv2 (fast)"
 msgstr ""
 
-msgctxt "#30020"
-msgid "Smooths and rounds edges to reduce pixelation. Written by Hyllian."
-msgstr ""
-
 msgctxt "#30021"
 msgid "xBR-mlv4"
 msgstr ""
 
-msgctxt "#30022"
-msgid "Smooths and rounds edges to reduce pixelation. Image is smoother than other versions. Written by Hyllian."
-msgstr ""
-
 msgctxt "#30024"
 msgid "Super Eagle"
-msgstr ""
-
-msgctxt "#30025"
-msgid "Smooths and rounds edges to reduce pixelation. Written by Derek Liauw Kie Fa."
 msgstr ""
 
 msgctxt "#30026"
@@ -123,18 +83,6 @@ msgctxt "#30028"
 msgid "PlayStation Portable"
 msgstr ""
 
-msgctxt "#30029"
-msgid "Replicates the 4.3-inch LCD screen of the PlayStation Portable."
-msgstr ""
-
-msgctxt "#30030"
-msgid "Replecates the 3-inch LCD screen of the Nintendo DS."
-msgstr ""
-
-msgctxt "#30031"
-msgid "Replicates the 2.9-inch color LCD screen of the Game Boy Advance."
-msgstr ""
-
 msgctxt "#30032"
 msgid "LCD Screen"
 msgstr ""
@@ -143,16 +91,8 @@ msgctxt "#30033"
 msgid "LCD3x"
 msgstr ""
 
-msgctxt "#30034"
-msgid "Simulates an LCD screen. Written by Gigaherz."
-msgstr ""
-
 msgctxt "#30035"
 msgid "NTSC S-video"
-msgstr ""
-
-msgctxt "#30036"
-msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction, sharpening, curvature, interlacing, phosphor and halation."
 msgstr ""
 
 msgctxt "#30037"
@@ -161,14 +101,6 @@ msgstr ""
 
 msgctxt "#30038"
 msgid "xBR-lv3 (no blend)"
-msgstr ""
-
-msgctxt "#30039"
-msgid "Smooths and rounds edges to reduce pixelation. Smoother than the no-blend version. Written by Hyllian."
-msgstr ""
-
-msgctxt "#30040"
-msgid "Smooths and rounds edges to reduce pixelation. Pixel colors are not blended together. Written by Hyllian."
 msgstr ""
 
 msgctxt "#30041"

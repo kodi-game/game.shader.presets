@@ -22,10 +22,6 @@ msgctxt "#30001"
 msgid "Game Boy"
 msgstr "Game Boy"
 
-msgctxt "#30002"
-msgid "Replicates the 2.6-inch dot matrix screen of the Game Boy. Features the ghosting problems of the original handheld."
-msgstr "Reproduce la pantalla de matriz de puntos de 2,6 pulgadas de la Game Boy. Presenta los problemas de imagen fantasma de la consola portátil original."
-
 msgctxt "#30003"
 msgid "4xBR Hybrid"
 msgstr "4xBR Híbrido"
@@ -34,25 +30,13 @@ msgctxt "#30004"
 msgid "CRT Display"
 msgstr "Pantalla CRT"
 
-msgctxt "#30005"
-msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction and sharpening."
-msgstr "Emula una pantalla CRT. Incluye líneas de escaneo, corrección del color, corrección gamma y nitidez."
-
 msgctxt "#30006"
 msgid "Hylian"
 msgstr "Hylian"
 
-msgctxt "#30007"
-msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction, sharpening, CRT phosphor and CRT beam effects."
-msgstr "Emula una pantalla CRT. Incluye líneas de escaneo, corrección del color, corrección gamma, nitidez, fósforo CRT y efectos de haz CRT."
-
 msgctxt "#30008"
 msgid "Royale"
 msgstr "Royale"
-
-msgctxt "#30009"
-msgid "Emulates a CRT display. Resource intensive. Features scan-lines, color correction, gamma correction, sharpening, CRT phosphor emulation, halation, refractive diffusion, curvature and anti-aliasing."
-msgstr "Emula una pantalla CRT. Requiere muchos recursos. Incluye líneas de escaneo, corrección del color, corrección gamma, nitidez, emulación de fósforo CRT, efecto halo, difusión refractiva, curvatura y antialiasing."
 
 msgctxt "#30010"
 msgid "CRT Geom"
@@ -62,10 +46,6 @@ msgctxt "#30011"
 msgid "NTSC RF"
 msgstr "NTSC RF"
 
-msgctxt "#30012"
-msgid "Replicates an analog signal through a coaxial RF connector. Features color distortion, blurring, NTSC color artifacts and dot crawl."
-msgstr "Reproduce una señal analógica a través de un conector RF coaxial. Presenta distorsión del color, desenfoque, artefactos de color NTSC y arrastre de puntos."
-
 msgctxt "#30013"
 msgid "TV-out"
 msgstr "Salida de TV"
@@ -73,14 +53,6 @@ msgstr "Salida de TV"
 msgctxt "#30014"
 msgid "NTSC Composite"
 msgstr "NTSC Compuesto"
-
-msgctxt "#30015"
-msgid "Replicates an analog signal through an S-Video connector. Features color distortion, blurring, NTSC color artifacts."
-msgstr "Reproduce una señal analógica a través de un conector S-Video. Presenta distorsión del color, desenfoque y artefactos de color NTSC."
-
-msgctxt "#30016"
-msgid "Replicates an analog signal through a composite connector. Features color distortion, blurring, NTSC color artifacts."
-msgstr "Reproduce una señal analógica a través de un conector compuesto. Presenta distorsión del color, desenfoque, artefactos de color NTSC."
 
 # empty string with id 30017
 msgctxt "#30018"
@@ -91,25 +63,13 @@ msgctxt "#30019"
 msgid "xBR-lv2 (fast)"
 msgstr "xBR-lv2 (rápido)"
 
-msgctxt "#30020"
-msgid "Smooths and rounds edges to reduce pixelation. Written by Hyllian."
-msgstr "Suaviza y redondea los bordes para reducir el pixelado. Escrito por Hyllian."
-
 msgctxt "#30021"
 msgid "xBR-mlv4"
 msgstr "xBR-mlv4"
 
-msgctxt "#30022"
-msgid "Smooths and rounds edges to reduce pixelation. Image is smoother than other versions. Written by Hyllian."
-msgstr "Suaviza y redondea los bordes para reducir el pixelado. La imagen es más suave que en otras versiones. Escrito por Hyllian."
-
 msgctxt "#30024"
 msgid "Super Eagle"
 msgstr "Super Eagle"
-
-msgctxt "#30025"
-msgid "Smooths and rounds edges to reduce pixelation. Written by Derek Liauw Kie Fa."
-msgstr "Suaviza y redondea los bordes para reducir el pixelado. Escrito por Derek Liauw Kie Fa."
 
 msgctxt "#30026"
 msgid "Game Boy Advance"
@@ -123,18 +83,6 @@ msgctxt "#30028"
 msgid "PlayStation Portable"
 msgstr "PlayStation Portable"
 
-msgctxt "#30029"
-msgid "Replicates the 4.3-inch LCD screen of the PlayStation Portable."
-msgstr "Reproduce la pantalla LCD de 4,3 pulgadas de la PlayStation Portable."
-
-msgctxt "#30030"
-msgid "Replecates the 3-inch LCD screen of the Nintendo DS."
-msgstr "Sustituye a la pantalla LCD de 3 pulgadas de la Nintendo DS."
-
-msgctxt "#30031"
-msgid "Replicates the 2.9-inch color LCD screen of the Game Boy Advance."
-msgstr "Reproduce la pantalla LCD en color de 2,9 pulgadas de la Game Boy Advance."
-
 msgctxt "#30032"
 msgid "LCD Screen"
 msgstr "Pantalla LCD"
@@ -143,17 +91,9 @@ msgctxt "#30033"
 msgid "LCD3x"
 msgstr "LCD3x"
 
-msgctxt "#30034"
-msgid "Simulates an LCD screen. Written by Gigaherz."
-msgstr "Simula una pantalla LCD. Escrito por Gigaherz."
-
 msgctxt "#30035"
 msgid "NTSC S-video"
 msgstr "NTSC S-Video"
-
-msgctxt "#30036"
-msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction, sharpening, curvature, interlacing, phosphor and halation."
-msgstr "Emula una pantalla CRT. Incluye líneas de escaneo, corrección del color, corrección gamma, nitidez, curvatura, entrelazado, fósforo y efecto halo."
 
 msgctxt "#30037"
 msgid "xBR-lv3"
@@ -162,14 +102,6 @@ msgstr "xBR-lv3"
 msgctxt "#30038"
 msgid "xBR-lv3 (no blend)"
 msgstr "xBR-lv3 (sin mezcla)"
-
-msgctxt "#30039"
-msgid "Smooths and rounds edges to reduce pixelation. Smoother than the no-blend version. Written by Hyllian."
-msgstr "Suaviza y redondea los bordes para reducir el pixelado. Más suave que la versión sin mezcla. Escrito por Hyllian."
-
-msgctxt "#30040"
-msgid "Smooths and rounds edges to reduce pixelation. Pixel colors are not blended together. Written by Hyllian."
-msgstr "Suaviza y redondea los bordes para reducir el pixelado. Los colores de los píxeles no se mezclan. Escrito por Hyllian."
 
 msgctxt "#30041"
 msgid "VHS"
@@ -222,3 +154,71 @@ msgstr "Punto"
 msgctxt "#30053"
 msgid "CRT Easymode"
 msgstr "CRT Easymode"
+
+#~ msgctxt "#30002"
+#~ msgid "Replicates the 2.6-inch dot matrix screen of the Game Boy. Features the ghosting problems of the original handheld."
+#~ msgstr "Reproduce la pantalla de matriz de puntos de 2,6 pulgadas de la Game Boy. Presenta los problemas de imagen fantasma de la consola portátil original."
+
+#~ msgctxt "#30005"
+#~ msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction and sharpening."
+#~ msgstr "Emula una pantalla CRT. Incluye líneas de escaneo, corrección del color, corrección gamma y nitidez."
+
+#~ msgctxt "#30007"
+#~ msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction, sharpening, CRT phosphor and CRT beam effects."
+#~ msgstr "Emula una pantalla CRT. Incluye líneas de escaneo, corrección del color, corrección gamma, nitidez, fósforo CRT y efectos de haz CRT."
+
+#~ msgctxt "#30009"
+#~ msgid "Emulates a CRT display. Resource intensive. Features scan-lines, color correction, gamma correction, sharpening, CRT phosphor emulation, halation, refractive diffusion, curvature and anti-aliasing."
+#~ msgstr "Emula una pantalla CRT. Requiere muchos recursos. Incluye líneas de escaneo, corrección del color, corrección gamma, nitidez, emulación de fósforo CRT, efecto halo, difusión refractiva, curvatura y antialiasing."
+
+#~ msgctxt "#30012"
+#~ msgid "Replicates an analog signal through a coaxial RF connector. Features color distortion, blurring, NTSC color artifacts and dot crawl."
+#~ msgstr "Reproduce una señal analógica a través de un conector RF coaxial. Presenta distorsión del color, desenfoque, artefactos de color NTSC y arrastre de puntos."
+
+#~ msgctxt "#30015"
+#~ msgid "Replicates an analog signal through an S-Video connector. Features color distortion, blurring, NTSC color artifacts."
+#~ msgstr "Reproduce una señal analógica a través de un conector S-Video. Presenta distorsión del color, desenfoque y artefactos de color NTSC."
+
+#~ msgctxt "#30016"
+#~ msgid "Replicates an analog signal through a composite connector. Features color distortion, blurring, NTSC color artifacts."
+#~ msgstr "Reproduce una señal analógica a través de un conector compuesto. Presenta distorsión del color, desenfoque, artefactos de color NTSC."
+
+#~ msgctxt "#30020"
+#~ msgid "Smooths and rounds edges to reduce pixelation. Written by Hyllian."
+#~ msgstr "Suaviza y redondea los bordes para reducir el pixelado. Escrito por Hyllian."
+
+#~ msgctxt "#30022"
+#~ msgid "Smooths and rounds edges to reduce pixelation. Image is smoother than other versions. Written by Hyllian."
+#~ msgstr "Suaviza y redondea los bordes para reducir el pixelado. La imagen es más suave que en otras versiones. Escrito por Hyllian."
+
+#~ msgctxt "#30025"
+#~ msgid "Smooths and rounds edges to reduce pixelation. Written by Derek Liauw Kie Fa."
+#~ msgstr "Suaviza y redondea los bordes para reducir el pixelado. Escrito por Derek Liauw Kie Fa."
+
+#~ msgctxt "#30029"
+#~ msgid "Replicates the 4.3-inch LCD screen of the PlayStation Portable."
+#~ msgstr "Reproduce la pantalla LCD de 4,3 pulgadas de la PlayStation Portable."
+
+#~ msgctxt "#30030"
+#~ msgid "Replecates the 3-inch LCD screen of the Nintendo DS."
+#~ msgstr "Sustituye a la pantalla LCD de 3 pulgadas de la Nintendo DS."
+
+#~ msgctxt "#30031"
+#~ msgid "Replicates the 2.9-inch color LCD screen of the Game Boy Advance."
+#~ msgstr "Reproduce la pantalla LCD en color de 2,9 pulgadas de la Game Boy Advance."
+
+#~ msgctxt "#30034"
+#~ msgid "Simulates an LCD screen. Written by Gigaherz."
+#~ msgstr "Simula una pantalla LCD. Escrito por Gigaherz."
+
+#~ msgctxt "#30036"
+#~ msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction, sharpening, curvature, interlacing, phosphor and halation."
+#~ msgstr "Emula una pantalla CRT. Incluye líneas de escaneo, corrección del color, corrección gamma, nitidez, curvatura, entrelazado, fósforo y efecto halo."
+
+#~ msgctxt "#30039"
+#~ msgid "Smooths and rounds edges to reduce pixelation. Smoother than the no-blend version. Written by Hyllian."
+#~ msgstr "Suaviza y redondea los bordes para reducir el pixelado. Más suave que la versión sin mezcla. Escrito por Hyllian."
+
+#~ msgctxt "#30040"
+#~ msgid "Smooths and rounds edges to reduce pixelation. Pixel colors are not blended together. Written by Hyllian."
+#~ msgstr "Suaviza y redondea los bordes para reducir el pixelado. Los colores de los píxeles no se mezclan. Escrito por Hyllian."

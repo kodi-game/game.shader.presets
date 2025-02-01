@@ -22,10 +22,6 @@ msgctxt "#30001"
 msgid "Game Boy"
 msgstr "Game Boy"
 
-msgctxt "#30002"
-msgid "Replicates the 2.6-inch dot matrix screen of the Game Boy. Features the ghosting problems of the original handheld."
-msgstr "Повторяет 2.6-дюймовый матричный экран Game Boy. Включает эффект гостинга как и в оригинальной консоли."
-
 msgctxt "#30003"
 msgid "4xBR Hybrid"
 msgstr "4xBR Hybrid"
@@ -34,24 +30,12 @@ msgctxt "#30004"
 msgid "CRT Display"
 msgstr "ЭЛТ монитор"
 
-msgctxt "#30005"
-msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction and sharpening."
-msgstr "Повторяет ЭЛТ монитор. Включает линии развёртки, цветокоррекцию, гамма коррекцию и резкость."
-
 msgctxt "#30006"
 msgid "Hylian"
 msgstr ""
 
-msgctxt "#30007"
-msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction, sharpening, CRT phosphor and CRT beam effects."
-msgstr "Повторяет ЭЛТ монитор. Включает линии развёртки, цветокоррекцию, гамма коррекцию, резкость, ЭЛТ-люминофор и эффекты лучей ЭЛТ."
-
 msgctxt "#30008"
 msgid "Royale"
-msgstr ""
-
-msgctxt "#30009"
-msgid "Emulates a CRT display. Resource intensive. Features scan-lines, color correction, gamma correction, sharpening, CRT phosphor emulation, halation, refractive diffusion, curvature and anti-aliasing."
 msgstr ""
 
 msgctxt "#30010"
@@ -62,10 +46,6 @@ msgctxt "#30011"
 msgid "NTSC RF"
 msgstr "NTSC RF"
 
-msgctxt "#30012"
-msgid "Replicates an analog signal through a coaxial RF connector. Features color distortion, blurring, NTSC color artifacts and dot crawl."
-msgstr "Повторяет аналоговый сигнал через коксиальный RF выход. Включает искажение цвета, размытие, и другие цветовые артефакты NTSC."
-
 msgctxt "#30013"
 msgid "TV-out"
 msgstr "ТВ-выход"
@@ -73,14 +53,6 @@ msgstr "ТВ-выход"
 msgctxt "#30014"
 msgid "NTSC Composite"
 msgstr "NTSC композит"
-
-msgctxt "#30015"
-msgid "Replicates an analog signal through an S-Video connector. Features color distortion, blurring, NTSC color artifacts."
-msgstr "Повторяе аналоговый сигнал через выход S-Video. Включает искажение цвета, размытие, и цветовые артефакты NTSC."
-
-msgctxt "#30016"
-msgid "Replicates an analog signal through a composite connector. Features color distortion, blurring, NTSC color artifacts."
-msgstr "Повторяет аналоговый сигнал через композитный выход. Включает искажение цвета, размытие, и цветовые артефакты NTSC."
 
 # empty string with id 30017
 msgctxt "#30018"
@@ -91,25 +63,13 @@ msgctxt "#30019"
 msgid "xBR-lv2 (fast)"
 msgstr "xBR-lv2 (быстрый)"
 
-msgctxt "#30020"
-msgid "Smooths and rounds edges to reduce pixelation. Written by Hyllian."
-msgstr "Сглаживает и округляет края, чтобы уменьшить пикселизацию. Автор: Hyllian."
-
 msgctxt "#30021"
 msgid "xBR-mlv4"
 msgstr "xBR-mlv4"
 
-msgctxt "#30022"
-msgid "Smooths and rounds edges to reduce pixelation. Image is smoother than other versions. Written by Hyllian."
-msgstr "Сглаживает и округляет края, чтобы уменьшить пикселизацию. Изображение более плавное, чем в других версиях. Автор: Hyllian."
-
 msgctxt "#30024"
 msgid "Super Eagle"
 msgstr "Super Eagle"
-
-msgctxt "#30025"
-msgid "Smooths and rounds edges to reduce pixelation. Written by Derek Liauw Kie Fa."
-msgstr "Сглаживает и округляет края, чтобы уменьшить пикселизацию. Автор: Derek Liauw Kie Fa."
 
 msgctxt "#30026"
 msgid "Game Boy Advance"
@@ -123,18 +83,6 @@ msgctxt "#30028"
 msgid "PlayStation Portable"
 msgstr "PlayStation Portable"
 
-msgctxt "#30029"
-msgid "Replicates the 4.3-inch LCD screen of the PlayStation Portable."
-msgstr "Повторяет 4.3-дюймовый LCD экран PlayStation Portable."
-
-msgctxt "#30030"
-msgid "Replecates the 3-inch LCD screen of the Nintendo DS."
-msgstr "Повторяет 3-дюймовый LCD экран Nintendo DS."
-
-msgctxt "#30031"
-msgid "Replicates the 2.9-inch color LCD screen of the Game Boy Advance."
-msgstr "Повторяет 2.9-дюймовый LCD экран Game Boy Advance."
-
 msgctxt "#30032"
 msgid "LCD Screen"
 msgstr "LCD экран"
@@ -143,17 +91,9 @@ msgctxt "#30033"
 msgid "LCD3x"
 msgstr "LCD3x"
 
-msgctxt "#30034"
-msgid "Simulates an LCD screen. Written by Gigaherz."
-msgstr "Повторяет LCD экран. Автор: Gigaherz."
-
 msgctxt "#30035"
 msgid "NTSC S-video"
 msgstr "NTSC S-video"
-
-msgctxt "#30036"
-msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction, sharpening, curvature, interlacing, phosphor and halation."
-msgstr ""
 
 msgctxt "#30037"
 msgid "xBR-lv3"
@@ -161,14 +101,6 @@ msgstr ""
 
 msgctxt "#30038"
 msgid "xBR-lv3 (no blend)"
-msgstr ""
-
-msgctxt "#30039"
-msgid "Smooths and rounds edges to reduce pixelation. Smoother than the no-blend version. Written by Hyllian."
-msgstr ""
-
-msgctxt "#30040"
-msgid "Smooths and rounds edges to reduce pixelation. Pixel colors are not blended together. Written by Hyllian."
 msgstr ""
 
 msgctxt "#30041"
@@ -222,3 +154,55 @@ msgstr "Dot"
 msgctxt "#30053"
 msgid "CRT Easymode"
 msgstr "ЭЛТ Easymode"
+
+#~ msgctxt "#30002"
+#~ msgid "Replicates the 2.6-inch dot matrix screen of the Game Boy. Features the ghosting problems of the original handheld."
+#~ msgstr "Повторяет 2.6-дюймовый матричный экран Game Boy. Включает эффект гостинга как и в оригинальной консоли."
+
+#~ msgctxt "#30005"
+#~ msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction and sharpening."
+#~ msgstr "Повторяет ЭЛТ монитор. Включает линии развёртки, цветокоррекцию, гамма коррекцию и резкость."
+
+#~ msgctxt "#30007"
+#~ msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction, sharpening, CRT phosphor and CRT beam effects."
+#~ msgstr "Повторяет ЭЛТ монитор. Включает линии развёртки, цветокоррекцию, гамма коррекцию, резкость, ЭЛТ-люминофор и эффекты лучей ЭЛТ."
+
+#~ msgctxt "#30012"
+#~ msgid "Replicates an analog signal through a coaxial RF connector. Features color distortion, blurring, NTSC color artifacts and dot crawl."
+#~ msgstr "Повторяет аналоговый сигнал через коксиальный RF выход. Включает искажение цвета, размытие, и другие цветовые артефакты NTSC."
+
+#~ msgctxt "#30015"
+#~ msgid "Replicates an analog signal through an S-Video connector. Features color distortion, blurring, NTSC color artifacts."
+#~ msgstr "Повторяе аналоговый сигнал через выход S-Video. Включает искажение цвета, размытие, и цветовые артефакты NTSC."
+
+#~ msgctxt "#30016"
+#~ msgid "Replicates an analog signal through a composite connector. Features color distortion, blurring, NTSC color artifacts."
+#~ msgstr "Повторяет аналоговый сигнал через композитный выход. Включает искажение цвета, размытие, и цветовые артефакты NTSC."
+
+#~ msgctxt "#30020"
+#~ msgid "Smooths and rounds edges to reduce pixelation. Written by Hyllian."
+#~ msgstr "Сглаживает и округляет края, чтобы уменьшить пикселизацию. Автор: Hyllian."
+
+#~ msgctxt "#30022"
+#~ msgid "Smooths and rounds edges to reduce pixelation. Image is smoother than other versions. Written by Hyllian."
+#~ msgstr "Сглаживает и округляет края, чтобы уменьшить пикселизацию. Изображение более плавное, чем в других версиях. Автор: Hyllian."
+
+#~ msgctxt "#30025"
+#~ msgid "Smooths and rounds edges to reduce pixelation. Written by Derek Liauw Kie Fa."
+#~ msgstr "Сглаживает и округляет края, чтобы уменьшить пикселизацию. Автор: Derek Liauw Kie Fa."
+
+#~ msgctxt "#30029"
+#~ msgid "Replicates the 4.3-inch LCD screen of the PlayStation Portable."
+#~ msgstr "Повторяет 4.3-дюймовый LCD экран PlayStation Portable."
+
+#~ msgctxt "#30030"
+#~ msgid "Replecates the 3-inch LCD screen of the Nintendo DS."
+#~ msgstr "Повторяет 3-дюймовый LCD экран Nintendo DS."
+
+#~ msgctxt "#30031"
+#~ msgid "Replicates the 2.9-inch color LCD screen of the Game Boy Advance."
+#~ msgstr "Повторяет 2.9-дюймовый LCD экран Game Boy Advance."
+
+#~ msgctxt "#30034"
+#~ msgid "Simulates an LCD screen. Written by Gigaherz."
+#~ msgstr "Повторяет LCD экран. Автор: Gigaherz."

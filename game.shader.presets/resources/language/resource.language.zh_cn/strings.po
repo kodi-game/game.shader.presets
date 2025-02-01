@@ -22,10 +22,6 @@ msgctxt "#30001"
 msgid "Game Boy"
 msgstr "Game Boy"
 
-msgctxt "#30002"
-msgid "Replicates the 2.6-inch dot matrix screen of the Game Boy. Features the ghosting problems of the original handheld."
-msgstr "复制 Game Boy 的2.6英寸点阵屏幕。具有原始手持设备的重影问题。"
-
 msgctxt "#30003"
 msgid "4xBR Hybrid"
 msgstr "4xBR 混合"
@@ -34,25 +30,13 @@ msgctxt "#30004"
 msgid "CRT Display"
 msgstr "CRT 显示"
 
-msgctxt "#30005"
-msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction and sharpening."
-msgstr "模拟 CRT 显示器。具有扫描线、颜色校正、伽马校正和锐化功能。"
-
 msgctxt "#30006"
 msgid "Hylian"
 msgstr "Hylian"
 
-msgctxt "#30007"
-msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction, sharpening, CRT phosphor and CRT beam effects."
-msgstr "模拟 CRT 显示器。具有扫描线、颜色校正、伽马校正、锐化、CRT 荧光粉和 CRT 束效应。"
-
 msgctxt "#30008"
 msgid "Royale"
 msgstr "Royale"
-
-msgctxt "#30009"
-msgid "Emulates a CRT display. Resource intensive. Features scan-lines, color correction, gamma correction, sharpening, CRT phosphor emulation, halation, refractive diffusion, curvature and anti-aliasing."
-msgstr "模拟 CRT 显示器。资源密集型。特点：扫描线、颜色校正、伽马校正、锐化、CRT 荧光粉模拟、光晕、折射扩散、曲率和抗混叠。"
 
 msgctxt "#30010"
 msgid "CRT Geom"
@@ -62,10 +46,6 @@ msgctxt "#30011"
 msgid "NTSC RF"
 msgstr "NTSC RF"
 
-msgctxt "#30012"
-msgid "Replicates an analog signal through a coaxial RF connector. Features color distortion, blurring, NTSC color artifacts and dot crawl."
-msgstr "通过同轴射频连接器复制模拟信号。特征是颜色失真、模糊、NTSC 颜色瑕疵和点爬行。"
-
 msgctxt "#30013"
 msgid "TV-out"
 msgstr "电视输出"
@@ -73,14 +53,6 @@ msgstr "电视输出"
 msgctxt "#30014"
 msgid "NTSC Composite"
 msgstr "NTSC 复合"
-
-msgctxt "#30015"
-msgid "Replicates an analog signal through an S-Video connector. Features color distortion, blurring, NTSC color artifacts."
-msgstr "通过 S-Video 连接器复制模拟信号。具有颜色失真、模糊、NTSC 颜色瑕疵。"
-
-msgctxt "#30016"
-msgid "Replicates an analog signal through a composite connector. Features color distortion, blurring, NTSC color artifacts."
-msgstr "通过复合连接器复制模拟信号。具有颜色失真、模糊、NTSC 颜色瑕疵。"
 
 # empty string with id 30017
 msgctxt "#30018"
@@ -91,25 +63,13 @@ msgctxt "#30019"
 msgid "xBR-lv2 (fast)"
 msgstr "xBR-lv2（快）"
 
-msgctxt "#30020"
-msgid "Smooths and rounds edges to reduce pixelation. Written by Hyllian."
-msgstr "平滑和圆化边缘以减少像素化。作者：Hylian。"
-
 msgctxt "#30021"
 msgid "xBR-mlv4"
 msgstr "xBR-mlv4"
 
-msgctxt "#30022"
-msgid "Smooths and rounds edges to reduce pixelation. Image is smoother than other versions. Written by Hyllian."
-msgstr "平滑和圆化边缘以减少像素化。图像比其他版本更平滑。作者：Hylian。"
-
 msgctxt "#30024"
 msgid "Super Eagle"
 msgstr "超级鹰"
-
-msgctxt "#30025"
-msgid "Smooths and rounds edges to reduce pixelation. Written by Derek Liauw Kie Fa."
-msgstr "平滑和圆化边缘以减少像素化。作者：Derek Liauw Kie Fa。"
 
 msgctxt "#30026"
 msgid "Game Boy Advance"
@@ -123,18 +83,6 @@ msgctxt "#30028"
 msgid "PlayStation Portable"
 msgstr "便携式 PlayStation"
 
-msgctxt "#30029"
-msgid "Replicates the 4.3-inch LCD screen of the PlayStation Portable."
-msgstr "复制便携式 PlayStation 的4.3英寸 LCD 屏幕。"
-
-msgctxt "#30030"
-msgid "Replecates the 3-inch LCD screen of the Nintendo DS."
-msgstr "复制任天堂 DS 的3英寸 LCD 屏幕。"
-
-msgctxt "#30031"
-msgid "Replicates the 2.9-inch color LCD screen of the Game Boy Advance."
-msgstr "复制 Game Boy Advance 的2.9英寸彩色 LCD 屏幕。"
-
 msgctxt "#30032"
 msgid "LCD Screen"
 msgstr "LCD 屏幕"
@@ -143,17 +91,9 @@ msgctxt "#30033"
 msgid "LCD3x"
 msgstr "LCD3x"
 
-msgctxt "#30034"
-msgid "Simulates an LCD screen. Written by Gigaherz."
-msgstr "模拟 LCD 屏幕。作者：Gigaherz。"
-
 msgctxt "#30035"
 msgid "NTSC S-video"
 msgstr "NTSC S-video"
-
-msgctxt "#30036"
-msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction, sharpening, curvature, interlacing, phosphor and halation."
-msgstr "模拟 CRT 显示器。特点扫描线、颜色校正、伽马校正、锐化、曲率、交错、荧光粉和光晕。"
 
 msgctxt "#30037"
 msgid "xBR-lv3"
@@ -162,14 +102,6 @@ msgstr "xBR-lv3"
 msgctxt "#30038"
 msgid "xBR-lv3 (no blend)"
 msgstr "xBR-lv3（无混合）"
-
-msgctxt "#30039"
-msgid "Smooths and rounds edges to reduce pixelation. Smoother than the no-blend version. Written by Hyllian."
-msgstr "平滑和圆化边缘以减少像素化。比无混合版本更平滑。作者：Hylian。"
-
-msgctxt "#30040"
-msgid "Smooths and rounds edges to reduce pixelation. Pixel colors are not blended together. Written by Hyllian."
-msgstr "平滑和圆化边缘以减少像素化。像素颜色不会混合在一起。作者：Hylian。"
 
 msgctxt "#30041"
 msgid "VHS"
@@ -222,3 +154,71 @@ msgstr "Dot"
 msgctxt "#30053"
 msgid "CRT Easymode"
 msgstr "CRT 简易模式"
+
+#~ msgctxt "#30002"
+#~ msgid "Replicates the 2.6-inch dot matrix screen of the Game Boy. Features the ghosting problems of the original handheld."
+#~ msgstr "复制 Game Boy 的2.6英寸点阵屏幕。具有原始手持设备的重影问题。"
+
+#~ msgctxt "#30005"
+#~ msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction and sharpening."
+#~ msgstr "模拟 CRT 显示器。具有扫描线、颜色校正、伽马校正和锐化功能。"
+
+#~ msgctxt "#30007"
+#~ msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction, sharpening, CRT phosphor and CRT beam effects."
+#~ msgstr "模拟 CRT 显示器。具有扫描线、颜色校正、伽马校正、锐化、CRT 荧光粉和 CRT 束效应。"
+
+#~ msgctxt "#30009"
+#~ msgid "Emulates a CRT display. Resource intensive. Features scan-lines, color correction, gamma correction, sharpening, CRT phosphor emulation, halation, refractive diffusion, curvature and anti-aliasing."
+#~ msgstr "模拟 CRT 显示器。资源密集型。特点：扫描线、颜色校正、伽马校正、锐化、CRT 荧光粉模拟、光晕、折射扩散、曲率和抗混叠。"
+
+#~ msgctxt "#30012"
+#~ msgid "Replicates an analog signal through a coaxial RF connector. Features color distortion, blurring, NTSC color artifacts and dot crawl."
+#~ msgstr "通过同轴射频连接器复制模拟信号。特征是颜色失真、模糊、NTSC 颜色瑕疵和点爬行。"
+
+#~ msgctxt "#30015"
+#~ msgid "Replicates an analog signal through an S-Video connector. Features color distortion, blurring, NTSC color artifacts."
+#~ msgstr "通过 S-Video 连接器复制模拟信号。具有颜色失真、模糊、NTSC 颜色瑕疵。"
+
+#~ msgctxt "#30016"
+#~ msgid "Replicates an analog signal through a composite connector. Features color distortion, blurring, NTSC color artifacts."
+#~ msgstr "通过复合连接器复制模拟信号。具有颜色失真、模糊、NTSC 颜色瑕疵。"
+
+#~ msgctxt "#30020"
+#~ msgid "Smooths and rounds edges to reduce pixelation. Written by Hyllian."
+#~ msgstr "平滑和圆化边缘以减少像素化。作者：Hylian。"
+
+#~ msgctxt "#30022"
+#~ msgid "Smooths and rounds edges to reduce pixelation. Image is smoother than other versions. Written by Hyllian."
+#~ msgstr "平滑和圆化边缘以减少像素化。图像比其他版本更平滑。作者：Hylian。"
+
+#~ msgctxt "#30025"
+#~ msgid "Smooths and rounds edges to reduce pixelation. Written by Derek Liauw Kie Fa."
+#~ msgstr "平滑和圆化边缘以减少像素化。作者：Derek Liauw Kie Fa。"
+
+#~ msgctxt "#30029"
+#~ msgid "Replicates the 4.3-inch LCD screen of the PlayStation Portable."
+#~ msgstr "复制便携式 PlayStation 的4.3英寸 LCD 屏幕。"
+
+#~ msgctxt "#30030"
+#~ msgid "Replecates the 3-inch LCD screen of the Nintendo DS."
+#~ msgstr "复制任天堂 DS 的3英寸 LCD 屏幕。"
+
+#~ msgctxt "#30031"
+#~ msgid "Replicates the 2.9-inch color LCD screen of the Game Boy Advance."
+#~ msgstr "复制 Game Boy Advance 的2.9英寸彩色 LCD 屏幕。"
+
+#~ msgctxt "#30034"
+#~ msgid "Simulates an LCD screen. Written by Gigaherz."
+#~ msgstr "模拟 LCD 屏幕。作者：Gigaherz。"
+
+#~ msgctxt "#30036"
+#~ msgid "Emulates a CRT display. Features scan-lines, color correction, gamma correction, sharpening, curvature, interlacing, phosphor and halation."
+#~ msgstr "模拟 CRT 显示器。特点扫描线、颜色校正、伽马校正、锐化、曲率、交错、荧光粉和光晕。"
+
+#~ msgctxt "#30039"
+#~ msgid "Smooths and rounds edges to reduce pixelation. Smoother than the no-blend version. Written by Hyllian."
+#~ msgstr "平滑和圆化边缘以减少像素化。比无混合版本更平滑。作者：Hylian。"
+
+#~ msgctxt "#30040"
+#~ msgid "Smooths and rounds edges to reduce pixelation. Pixel colors are not blended together. Written by Hyllian."
+#~ msgstr "平滑和圆化边缘以减少像素化。像素颜色不会混合在一起。作者：Hylian。"
