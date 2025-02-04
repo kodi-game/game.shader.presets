@@ -18,6 +18,8 @@
       <fanart>resources/fanart.jpg</fanart>
     </assets>
     <summary lang="en_GB">Shader Preset Support</summary>
+    <summary lang="es_ES">Soporte de Preajustes de Sombreado</summary>
     <description lang="en_GB">This library provides support for libretro meta shaders.</description>
+    <description lang="es_ES">Esta librería soporta meta-sombreados de libretro.</description>
   </extension>
 </addon>
