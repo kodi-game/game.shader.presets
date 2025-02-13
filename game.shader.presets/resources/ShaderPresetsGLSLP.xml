@@ -1,101 +1,113 @@
 <?xml version="1.0" ?>
 <presets>
     <preset>
-        <path>glsl/crt/crt-geom.glslp</path>
-        <!-- CRT Display -->
-        <category>30004</category>
-        <!-- CRT Geom -->
-        <name>30010</name>
+        <path>glsl/anti-aliasing/advanced-aa.glslp</path>
+        <folder>Anti-Aliasing</folder>
+        <name>Advanced AA</name>
     </preset>
     <preset>
-        <path>glsl/handheld/lcd3x.glslp</path>
-        <!-- LCD Screen -->
-        <category>30032</category>
-        <!-- LCD3x -->
-        <name>30033</name>
+        <path>glsl/scalenx/scale2x.glslp</path>
+        <folder>Scale</folder>
+        <name>Scale 2x</name>
+    </preset>
+    <preset>
+        <path>glsl/scalenx/scale2xplus.glslp</path>
+        <folder>Scale</folder>
+        <name>Scale 2x Plus</name>
     </preset>
     <preset>
         <path>glsl/eagle/super-eagle.glslp</path>
-        <!-- Scaling Shader -->
-        <category>30018</category>
-        <!-- Super Eagle -->
-        <name>30024</name>
+        <folder>Eagle</folder>
+        <name>Super Eagle</name>
     </preset>
     <preset>
-        <path>glsl/vhs/vhs.glslp</path>
-        <!-- VHS -->
-        <category>30041</category>
-        <!-- VHS -->
-        <name>30041</name>
+        <path>glsl/xbr/xbr-lv2.glslp</path>
+        <folder>xBR</folder>
+        <name>xBR-lv2</name>
+    </preset>
+    <preset>
+        <path>glsl/xbr/xbr-lv2-noblend.glslp</path>
+        <folder>xBR</folder>
+        <name>xBR-lv2 (no blend)</name>
+    </preset>
+    <preset>
+        <path>glsl/xbr/xbr-lv3.glslp</path>
+        <folder>xBR</folder>
+        <name>xBR-lv3</name>
+    </preset>
+    <preset>
+        <path>glsl/xbr/xbr-mlv4-multipass.glslp</path>
+        <folder>xBR</folder>
+        <name>xBR-mlv4</name>
+    </preset>
+    <preset>
+        <path>glsl/xbrz/4xbrz-linear.glslp</path>
+        <folder>xBRZ</folder>
+        <name>4xBRZ Linear</name>
+    </preset>
+    <preset>
+        <path>glsl/xbrz/xbrz-freescale.glslp</path>
+        <folder>xBRZ</folder>
+        <name>xBRZ Freescale</name>
+    </preset>
+    <preset>
+        <path>glsl/crt/crt-easymode-halation.glslp</path>
+        <folder>CRT</folder>
+        <name>CRT EasyMode Halation</name>
     </preset>
     <preset>
         <path>glsl/crt/crtglow_lanczos.glslp</path>
-        <!-- CRT Display -->
-        <category>30004</category>
-        <!-- CRT Glow Lanczos -->
-        <name>30043</name>
+        <folder>CRT</folder>
+        <name>CRT Glow Lanczos</name>
     </preset>
     <preset>
-        <path>glsl/xbrz/6xbrz-linear.glslp</path>
-        <!-- Scaling Shader -->
-        <category>30018</category>
-        <!-- 6xBZR Linear -->
-        <name>30042</name>
+        <path>glsl/crt/crt-lottes.glslp</path>
+        <folder>CRT</folder>
+        <name>CRT Lottes</name>
     </preset>
     <preset>
-        <path>glsl/crt/crt-lottes-multipass.glslp</path>
-        <!-- CRT Display -->
-        <category>30004</category>
-        <!-- CRT Lottes Multipass -->
-        <name>30044</name>
+        <path>glsl/crt/crt-geom.glslp</path>
+        <folder>CRT</folder>
+        <name>CRT Geom</name>
     </preset>
     <preset>
-        <path>glsl/anti-aliasing/advanced-aa.glslp</path>
-        <!-- Anti-Aliasing -->
-        <category>30045</category>
-        <!-- Advanced AA -->
-        <name>30046</name>
-    </preset>
-    <preset>
-        <path>glsl/handheld/agb001.glslp</path>
-        <!-- Game Boy -->
-        <category>30001</category>
-        <!-- AGB 001 -->
-        <name>30047</name>
-    </preset>
-    <preset>
-        <path>glsl/crt/crt-hyllian-3d.glslp</path>
-        <!-- CRT Display -->
-        <category>30004</category>
-        <!-- CRT Hyllian 3D -->
-        <name>30049</name>
-    </preset>
-    <preset>
-        <path>glsl/handheld/dot.glslp</path>
-        <!-- LCD Screen -->
-        <category>30032</category>
-        <!-- Dot -->
-        <name>30052</name>
+        <path>glsl/pal/Amiga_a520.glslp</path>
+        <folder>PAL</folder>
+        <name>Amiga A520</name>
     </preset>
     <preset>
         <path>glsl/pal/pal.glslp</path>
-        <!-- TV-out -->
-        <category>30013</category>
-        <!-- Pal -->
-        <name>30050</name>
+        <folder>PAL</folder>
+        <name>PAL</name>
     </preset>
     <preset>
-        <path>glsl/cel/advcartoon.glslp</path>
-        <!-- Color -->
-        <category>30048</category>
-        <!-- AdvCartoon -->
-        <name>30051</name>
+        <path>glsl/vhs/vhs.glslp</path>
+        <folder>VHS</folder>
+        <name>VHS</name>
     </preset>
     <preset>
-        <path>glsl/crt/crt-easymode.glslp</path>
-        <!-- CRT Display -->
-        <category>30004</category>
-        <!-- CRT Easymode -->
-        <name>30053</name>
+        <path>glsl/handheld/dot.glslp</path>
+        <folder>Handheld</folder>
+        <name>Dot</name>
+    </preset>
+    <preset>
+        <path>glsl/handheld/lcd3x.glslp</path>
+        <folder>Handheld</folder>
+        <name>LCD3x</name>
+    </preset>
+    <preset>
+        <path>glsl/handheld/lcd-shader-psp-color.glslp</path>
+        <folder>Handheld</folder>
+        <name>PSP Color</name>
+    </preset>
+    <preset>
+        <path>glsl/handheld/console-border/gbc-4x.glslp</path>
+        <folder>Console</folder>
+        <name>GBC 4x</name>
+    </preset>
+    <preset>
+        <path>glsl/handheld/console-border/psp-2x.glslp</path>
+        <folder>Console</folder>
+        <name>PSP 2x</name>
     </preset>
 </presets>
