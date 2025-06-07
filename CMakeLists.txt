@@ -78,7 +78,7 @@ if(HAVE_SYSLOG)
   list(APPEND SHADERPRESETS_HEADERS src/log/LogSyslog.h)
 endif()
 
-if(CORE_SYSTEM_NAME STREQUAL osx)
+if(CORE_SYSTEM_NAME STREQUAL osx OR CORE_SYSTEM_NAME STREQUAL darwin_embedded)
   list(APPEND DEPLIBS "-framework CoreFoundation")
 endif()
 
