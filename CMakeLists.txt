@@ -89,3 +89,5 @@ else()
 endif()
 
 build_addon(game.shader.presets SHADERPRESETS DEPLIBS)
+
+include(CPack)
