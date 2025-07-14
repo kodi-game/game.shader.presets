@@ -1,0 +1,7 @@
+shaders = 2
+
+shader0 = ../stock.glsl
+filter_linear0 = false
+
+shader1 = shaders/crt-lottes.glsl
+filter_linear1 = false
