@@ -234,7 +234,7 @@ void CRarchTranslator::TranslateShaderPass(const video_shader_pass &pass, rarch_
     rarch_fbo.scale_x = fbo.scale_x.scale;
     break;
   }
-  switch (fbo.scale_y.type)
+  switch (rarch_fbo.type_y)
   {
   case RARCH_SCALE_ABSOLUTE:
     rarch_fbo.abs_y = fbo.scale_y.abs;
