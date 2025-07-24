@@ -70,11 +70,6 @@ set(SHADERPRESETS_HEADERS
 
 add_definitions(-DRARCH_INTERNAL)
 
-if(CORE_SYSTEM_NAME STREQUAL windows)
-  list(APPEND SHADERPRESETS_SOURCES src/utils/windows/CharsetConverter.cpp)
-  list(APPEND SHADERPRESETS_HEADERS src/utils/windows/CharsetConverter.h)
-endif()
-
 if(CORE_SYSTEM_NAME STREQUAL osx OR CORE_SYSTEM_NAME STREQUAL darwin_embedded)
   list(APPEND DEPLIBS "-framework CoreFoundation")
 endif()
