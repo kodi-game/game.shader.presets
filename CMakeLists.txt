@@ -75,13 +75,6 @@ if(CORE_SYSTEM_NAME STREQUAL windows)
   list(APPEND SHADERPRESETS_HEADERS src/utils/windows/CharsetConverter.h)
 endif()
 
-check_include_files("syslog.h" HAVE_SYSLOG)
-
-if(HAVE_SYSLOG)
-  list(APPEND SHADERPRESETS_SOURCES src/log/LogSyslog.cpp)
-  list(APPEND SHADERPRESETS_HEADERS src/log/LogSyslog.h)
-endif()
-
 if(CORE_SYSTEM_NAME STREQUAL osx OR CORE_SYSTEM_NAME STREQUAL darwin_embedded)
   list(APPEND DEPLIBS "-framework CoreFoundation")
 endif()

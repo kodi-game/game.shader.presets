@@ -23,10 +23,6 @@
 #include "LogAddon.h"
 #include "LogConsole.h"
 
-#if defined(HAVE_SYSLOG)
-#include "LogSyslog.h"
-#endif
-
 #include <stdarg.h>
 #include <stdio.h>
 
@@ -59,11 +55,6 @@ bool CLog::SetType(SYS_LOG_TYPE type)
   case SYS_LOG_TYPE_CONSOLE:
     SetPipe(new CLogConsole);
     break;
-#if defined(HAVE_SYSLOG)
-  case SYS_LOG_TYPE_SYSLOG:
-    SetPipe(new CLogSyslog);
-    break;
-#endif
   case SYS_LOG_TYPE_NULL:
     SetPipe(NULL);
     break;
