@@ -13,56 +13,60 @@ include_directories(${KODI_INCLUDE_DIR}
                     ${PROJECT_SOURCE_DIR}/src/depends
                     ${PROJECT_SOURCE_DIR}/src)
 
-set(SHADERPRESETS_SOURCES src/addon.cpp
-                     src/log/Log.cpp
-                     src/log/LogAddon.cpp
-                     src/log/LogConsole.cpp
-                     src/utils/RarchTranslator.cpp
-                     src/utils/StringUtils.cpp
-                     src/utils/URIUtils.cpp
-                     src/depends/file_path_special.c
-                     src/depends/gfx/video_shader_parse.c
-                     src/depends/gfx/video_state_tracker.c
-                     src/depends/libretro-common/compat/compat_posix_string.c
-                     src/depends/libretro-common/compat/compat_strcasestr.c
-                     src/depends/libretro-common/compat/compat_strl.c
-                     src/depends/libretro-common/file/config_file.c
-                     src/depends/libretro-common/file/file_path.c
-                     src/depends/libretro-common/file/retro_stat.c
-                     src/depends/libretro-common/hash/rhash.c
-                     src/depends/libretro-common/lists/string_list.c
-                     src/depends/libretro-common/streams/file_stream.c
-                     src/depends/libretro-common/string/stdstring.c)
+set(SHADERPRESETS_SOURCES
+  src/addon.cpp
+  src/depends/file_path_special.c
+  src/depends/gfx/video_shader_parse.c
+  src/depends/gfx/video_state_tracker.c
+  src/depends/libretro-common/compat/compat_posix_string.c
+  src/depends/libretro-common/compat/compat_strcasestr.c
+  src/depends/libretro-common/compat/compat_strl.c
+  src/depends/libretro-common/file/config_file.c
+  src/depends/libretro-common/file/file_path.c
+  src/depends/libretro-common/file/retro_stat.c
+  src/depends/libretro-common/hash/rhash.c
+  src/depends/libretro-common/lists/string_list.c
+  src/depends/libretro-common/streams/file_stream.c
+  src/depends/libretro-common/string/stdstring.c
+  src/log/Log.cpp
+  src/log/LogAddon.cpp
+  src/log/LogConsole.cpp
+  src/utils/RarchTranslator.cpp
+  src/utils/StringUtils.cpp
+  src/utils/URIUtils.cpp
+)
 
-set(SHADERPRESETS_HEADERS src/addon.h
-                     src/log/ILog.h
-                     src/log/Log.h
-                     src/log/LogAddon.h
-                     src/log/LogConsole.h
-                     src/utils/CommonIncludes.h
-                     src/utils/CommonMacros.h
-                     src/utils/RarchTranslator.h
-                     src/utils/StringUtils.h
-                     src/utils/URIUtils.h
-                     src/depends/file_path_special.h
-                     src/depends/gfx/video_shader_parse.h
-                     src/depends/gfx/video_state_tracker.h
-                     src/depends/libretro-common/include/boolean.h
-                     src/depends/libretro-common/include/compat/msvc.h
-                     src/depends/libretro-common/include/compat/posix_string.h
-                     src/depends/libretro-common/include/compat/strcasestr.h
-                     src/depends/libretro-common/include/compat/strl.h
-                     src/depends/libretro-common/include/file/config_file.h
-                     src/depends/libretro-common/include/file/file_path.h
-                     src/depends/libretro-common/include/lists/string_list.h
-                     src/depends/libretro-common/include/retro_assert.h
-                     src/depends/libretro-common/include/retro_stat.h
-                     src/depends/libretro-common/include/retro_common_api.h
-                     src/depends/libretro-common/include/retro_inline.h
-                     src/depends/libretro-common/include/retro_miscellaneous.h
-                     src/depends/libretro-common/include/rhash.h
-                     src/depends/libretro-common/include/streams/file_stream.h
-                     src/depends/libretro-common/include/string/stdstring.h)
+set(SHADERPRESETS_HEADERS
+  src/addon.h
+  src/depends/file_path_special.h
+  src/depends/gfx/video_shader_parse.h
+  src/depends/gfx/video_state_tracker.h
+  src/depends/libretro-common/include/boolean.h
+  src/depends/libretro-common/include/compat/msvc.h
+  src/depends/libretro-common/include/compat/posix_string.h
+  src/depends/libretro-common/include/compat/strcasestr.h
+  src/depends/libretro-common/include/compat/strl.h
+  src/depends/libretro-common/include/file/config_file.h
+  src/depends/libretro-common/include/file/file_path.h
+  src/depends/libretro-common/include/lists/string_list.h
+  src/depends/libretro-common/include/retro_assert.h
+  src/depends/libretro-common/include/retro_common_api.h
+  src/depends/libretro-common/include/retro_inline.h
+  src/depends/libretro-common/include/retro_miscellaneous.h
+  src/depends/libretro-common/include/retro_stat.h
+  src/depends/libretro-common/include/rhash.h
+  src/depends/libretro-common/include/streams/file_stream.h
+  src/depends/libretro-common/include/string/stdstring.h
+  src/log/ILog.h
+  src/log/Log.h
+  src/log/LogAddon.h
+  src/log/LogConsole.h
+  src/utils/CommonIncludes.h
+  src/utils/CommonMacros.h
+  src/utils/RarchTranslator.h
+  src/utils/StringUtils.h
+  src/utils/URIUtils.h
+)
 
 add_definitions(-DRARCH_INTERNAL)
 
