@@ -61,8 +61,6 @@ set(SHADERPRESETS_HEADERS
   src/log/Log.h
   src/log/LogAddon.h
   src/log/LogConsole.h
-  src/utils/CommonIncludes.h
-  src/utils/CommonMacros.h
   src/utils/RarchTranslator.h
   src/utils/StringUtils.h
   src/utils/URIUtils.h
