@@ -15,18 +15,14 @@ include_directories(${KODI_INCLUDE_DIR}
 
 set(SHADERPRESETS_SOURCES
   src/addon.cpp
-  src/depends/file_path_special.c
   src/depends/gfx/video_shader_parse.c
-  src/depends/gfx/video_state_tracker.c
   src/depends/libretro-common/compat/compat_posix_string.c
-  src/depends/libretro-common/compat/compat_strcasestr.c
   src/depends/libretro-common/compat/compat_strl.c
+  src/depends/libretro-common/encodings/encoding_utf.c
   src/depends/libretro-common/file/config_file.c
-  src/depends/libretro-common/file/file_path.c
-  src/depends/libretro-common/file/retro_stat.c
-  src/depends/libretro-common/hash/rhash.c
+  src/depends/libretro-common/file/file_path.cpp
   src/depends/libretro-common/lists/string_list.c
-  src/depends/libretro-common/streams/file_stream.c
+  src/depends/libretro-common/streams/file_stream.cpp
   src/depends/libretro-common/string/stdstring.c
   src/log/Log.cpp
   src/log/LogAddon.cpp
@@ -38,23 +34,18 @@ set(SHADERPRESETS_SOURCES
 
 set(SHADERPRESETS_HEADERS
   src/addon.h
-  src/depends/file_path_special.h
   src/depends/gfx/video_shader_parse.h
-  src/depends/gfx/video_state_tracker.h
+  src/depends/libretro-common/include/array/rhmap.h
   src/depends/libretro-common/include/boolean.h
   src/depends/libretro-common/include/compat/msvc.h
   src/depends/libretro-common/include/compat/posix_string.h
-  src/depends/libretro-common/include/compat/strcasestr.h
   src/depends/libretro-common/include/compat/strl.h
+  src/depends/libretro-common/include/encodings/utf.h
   src/depends/libretro-common/include/file/config_file.h
   src/depends/libretro-common/include/file/file_path.h
   src/depends/libretro-common/include/lists/string_list.h
-  src/depends/libretro-common/include/retro_assert.h
-  src/depends/libretro-common/include/retro_common_api.h
   src/depends/libretro-common/include/retro_inline.h
   src/depends/libretro-common/include/retro_miscellaneous.h
-  src/depends/libretro-common/include/retro_stat.h
-  src/depends/libretro-common/include/rhash.h
   src/depends/libretro-common/include/streams/file_stream.h
   src/depends/libretro-common/include/string/stdstring.h
   src/log/ILog.h
@@ -66,7 +57,10 @@ set(SHADERPRESETS_HEADERS
   src/utils/URIUtils.h
 )
 
-add_definitions(-DRARCH_INTERNAL)
+# Fix deprecated strdup breaking UWP builds
+if (MSVC)
+  add_definitions(-Dstrdup=_strdup)
+endif()
 
 if(CORE_SYSTEM_NAME STREQUAL osx OR CORE_SYSTEM_NAME STREQUAL darwin_embedded)
   list(APPEND DEPLIBS "-framework CoreFoundation")

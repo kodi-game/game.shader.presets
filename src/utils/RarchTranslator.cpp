@@ -133,12 +133,10 @@ enum gfx_wrap_type CRarchTranslator::TranslateWrapType(SHADER_WRAP_TYPE type)
 void CRarchTranslator::TranslateShaderPass(const rarch_video_shader_pass &rarch_pass, video_shader_pass &pass, const std::string &configPath)
 {
   pass.source_path = nullptr;
-  if (rarch_pass.source.path != nullptr)
-  {
-    const unsigned int source_path_len = std::strlen(rarch_pass.source.path);
-    if (source_path_len > 0)
-      TranslateRelativePath(pass.source_path, rarch_pass.source.path, configPath);
-  }
+
+  const unsigned int source_path_len = std::strlen(rarch_pass.source.path);
+  if (source_path_len > 0)
+    TranslateRelativePath(pass.source_path, rarch_pass.source.path, configPath);
 
   pass.vertex_source = nullptr;
   if (rarch_pass.source.string.vertex != nullptr)
@@ -165,8 +163,8 @@ void CRarchTranslator::TranslateShaderPass(const rarch_video_shader_pass &rarch_
   auto &fbo = pass.fbo;
   auto &rarch_fbo = rarch_pass.fbo;
 
-  fbo.fp_fbo = rarch_fbo.fp_fbo;
-  fbo.srgb_fbo = rarch_fbo.srgb_fbo;
+  fbo.fp_fbo = rarch_fbo.flags & FBO_SCALE_FLAG_FP_FBO;
+  fbo.srgb_fbo = rarch_fbo.flags & FBO_SCALE_FLAG_SRGB_FBO;
   fbo.scale_x.type = TranslateScaleType(rarch_fbo.type_x);
   fbo.scale_y.type = TranslateScaleType(rarch_fbo.type_y);
   switch (fbo.scale_x.type)
@@ -221,8 +219,8 @@ void CRarchTranslator::TranslateShaderPass(const video_shader_pass &pass, rarch_
   auto &rarch_fbo = rarch_pass.fbo;
   auto &fbo = pass.fbo;
 
-  rarch_fbo.fp_fbo = fbo.fp_fbo;
-  rarch_fbo.srgb_fbo = fbo.srgb_fbo;
+  rarch_fbo.flags |= fbo.fp_fbo ? FBO_SCALE_FLAG_FP_FBO : 0;
+  rarch_fbo.flags |= fbo.srgb_fbo ? FBO_SCALE_FLAG_SRGB_FBO : 0;
   rarch_fbo.type_x = TranslateScaleType(fbo.scale_x.type);
   rarch_fbo.type_y = TranslateScaleType(fbo.scale_y.type);
   switch (rarch_fbo.type_x)
@@ -359,9 +357,6 @@ void CRarchTranslator::TranslateShader(const rarch_video_shader &rarch_shader, v
 
 void CRarchTranslator::TranslateShader(const video_shader &shader, rarch_video_shader &rarch_shader, const std::string &configPath)
 {
-  rarch_shader.type = RARCH_SHADER_NONE; //! @todo
-
-  rarch_shader.modern = false;
   rarch_shader.prefix[0] = '\0';
 
   rarch_shader.passes = shader.pass_count;
@@ -377,9 +372,7 @@ void CRarchTranslator::TranslateShader(const video_shader &shader, rarch_video_s
     TranslateShaderParameter(shader.parameters[i], rarch_shader.parameters[i]);
 
   rarch_shader.variables = 0;
-  rarch_shader.script_path[0] = '\0';
-  rarch_shader.script = nullptr;
-  rarch_shader.script_class[0] = '\0';
+  rarch_shader.path[0] = '\0';
   rarch_shader.feedback_pass = -1;
 }
 
