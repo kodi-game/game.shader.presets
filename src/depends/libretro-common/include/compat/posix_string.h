@@ -38,7 +38,7 @@
 
 RETRO_BEGIN_DECLS
 
-#if defined(_WIN32) || defined(DOXYGEN)
+#if defined(_WIN32)
 #undef strtok_r
 #define strtok_r(str, delim, saveptr) retro_strtok_r__(str, delim, saveptr)
 
@@ -51,7 +51,7 @@ RETRO_BEGIN_DECLS
 char *strtok_r(char *str, const char *delim, char **saveptr);
 #endif
 
-#if defined(_MSC_VER) || defined(DOXYGEN)
+#if defined(_MSC_VER)
 #undef strcasecmp
 #undef strdup
 
