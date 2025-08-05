@@ -1,11 +1,6 @@
 <?xml version="1.0" ?>
 <presets>
     <preset>
-        <path>hlsl/anti-aliasing/advanced-aa.cgp</path>
-        <folder>Anti-Aliasing</folder>
-        <name>Advanced AA</name>
-    </preset>
-    <preset>
         <path>hlsl/scalenx/scale2x.cgp</path>
         <folder>Scale</folder>
         <name>Scale 2x</name>
@@ -19,6 +14,11 @@
         <path>hlsl/eagle/super-eagle.cgp</path>
         <folder>Eagle</folder>
         <name>Super Eagle</name>
+    </preset>
+    <preset>
+        <path>hlsl/anti-aliasing/advanced-aa.cgp</path>
+        <folder>Anti-Aliasing</folder>
+        <name>Advanced AA</name>
     </preset>
     <preset>
         <path>hlsl/xbr/xbr-lv2-fast.cgp</path>
@@ -41,24 +41,24 @@
         <name>4xBR Hybrid</name>
     </preset>
     <preset>
-        <path>hlsl/crt/crt-lottes.cgp</path>
-        <folder>CRT</folder>
-        <name>CRT Lottes</name>
-    </preset>
-    <preset>
         <path>hlsl/crt/crt-geom.cgp</path>
         <folder>CRT</folder>
         <name>CRT Geom</name>
     </preset>
     <preset>
-        <path>hlsl/ntsc/ntsc.cgp</path>
-        <folder>NTSC</folder>
-        <name>NTSC</name>
+        <path>hlsl/crt/crt-lottes.cgp</path>
+        <folder>CRT</folder>
+        <name>CRT Lottes</name>
     </preset>
     <preset>
         <path>hlsl/pal/pal-singlepass.cgp</path>
         <folder>PAL</folder>
         <name>PAL</name>
+    </preset>
+    <preset>
+        <path>hlsl/ntsc/ntsc.cgp</path>
+        <folder>NTSC</folder>
+        <name>NTSC</name>
     </preset>
     <preset>
         <path>hlsl/handheld/lcd3x.cgp</path>

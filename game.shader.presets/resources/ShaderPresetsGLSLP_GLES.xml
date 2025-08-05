@@ -21,16 +21,6 @@
         <name>Advanced AA</name>
     </preset>
     <preset>
-        <path>glsl/xbr/xbr-lv2.glslp</path>
-        <folder>xBR</folder>
-        <name>xBR-lv2</name>
-    </preset>
-    <preset>
-        <path>glsl/xbr/xbr-lv2-noblend.glslp</path>
-        <folder>xBR</folder>
-        <name>xBR-lv2 (no blend)</name>
-    </preset>
-    <preset>
         <path>glsl/xbr/xbr-lv3.glslp</path>
         <folder>xBR</folder>
         <name>xBR-lv3</name>
@@ -49,11 +39,6 @@
         <path>glsl/xbrz/xbrz-freescale.glslp</path>
         <folder>xBRZ</folder>
         <name>xBRZ Freescale</name>
-    </preset>
-    <preset>
-        <path>glsl/crt/crt-hyllian.glslp</path>
-        <folder>CRT</folder>
-        <name>CRT Hyllian</name>
     </preset>
     <preset>
         <path>glsl/crt/crt-easymode.glslp</path>
@@ -86,14 +71,9 @@
         <name>CRT Consumer</name>
     </preset>
     <preset>
-        <path>glsl/crt/crt-lottes-alpha.glslp</path>
+        <path>glsl/crt/crt-lottes.glslp</path>
         <folder>CRT</folder>
         <name>CRT Lottes</name>
-    </preset>
-    <preset>
-        <path>glsl/pal/Amiga_a520.glslp</path>
-        <folder>PAL</folder>
-        <name>Amiga A520</name>
     </preset>
     <preset>
         <path>glsl/ntsc/ntsc-svideo.glslp</path>
