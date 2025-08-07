@@ -41,7 +41,7 @@ public:
   preset_file PresetFileNew(const char *path) override;
   void PresetFileFree(preset_file file) override;
   bool ShaderPresetRead(preset_file file, video_shader &shader) override;
-  void ShaderPresetWrite(preset_file file, const video_shader &shader) override;
+  bool ShaderPresetWrite(preset_file file, const video_shader &shader) override;
   bool ShaderPresetResolveParameters(preset_file file, video_shader &shader) override;
   void ShaderPresetFree(video_shader &shader) override;
 };
