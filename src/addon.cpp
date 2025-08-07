@@ -157,6 +157,7 @@ void CShaderPreset::ShaderPresetFree(video_shader &shader)
     delete[] pass.source_path;
     delete[] pass.vertex_source;
     delete[] pass.fragment_source;
+    delete[] pass.alias;
   }
   delete[] shader.passes;
 

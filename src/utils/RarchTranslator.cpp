@@ -190,6 +190,14 @@ void CRarchTranslator::TranslateShaderPass(const rarch_video_shader_pass &rarch_
   pass.wrap = TranslateWrapType(rarch_pass.wrap);
   pass.frame_count_mod = rarch_pass.frame_count_mod;
   pass.mipmap = rarch_pass.mipmap;
+
+  pass.alias = nullptr;
+  const unsigned int alias_len = std::strlen(rarch_pass.alias);
+  if (alias_len > 0)
+  {
+    pass.alias = new char[alias_len + 1];
+    std::strncpy(pass.alias, rarch_pass.alias, alias_len + 1);
+  }
 }
 
 void CRarchTranslator::TranslateShaderPass(const video_shader_pass &pass, rarch_video_shader_pass &rarch_pass, const std::string &configPath)
@@ -215,6 +223,15 @@ void CRarchTranslator::TranslateShaderPass(const video_shader_pass &pass, rarch_
   }
 
   rarch_pass.alias[0] = '\0';
+  if (pass.alias != nullptr)
+  {
+    const unsigned int alias_len = std::strlen(pass.alias);
+    if (alias_len > 0)
+    {
+      std::strncpy(rarch_pass.alias, pass.alias, sizeof(rarch_pass.alias) - 1);
+      rarch_pass.alias[sizeof(rarch_pass.alias) - 1] = '\0'; // Ensure null-termination
+    }
+  }
 
   auto &rarch_fbo = rarch_pass.fbo;
   auto &fbo = pass.fbo;
