@@ -72,6 +72,8 @@ preset_file CShaderPreset::PresetFileNew(const char *path)
 void CShaderPreset::PresetFileFree(preset_file file)
 {
   shader_preset_file *preset_file = static_cast<shader_preset_file*>(file);
+  if (preset_file == nullptr)
+    return;
 
   config_file_free(preset_file->rarch_conf);
 
@@ -81,6 +83,8 @@ void CShaderPreset::PresetFileFree(preset_file file)
 bool CShaderPreset::ShaderPresetRead(preset_file file, video_shader &shader)
 {
   shader_preset_file *preset_file = static_cast<shader_preset_file*>(file);
+  if (preset_file == nullptr)
+    return false;
 
   rarch_video_shader rarch_shader;
 
@@ -108,22 +112,28 @@ bool CShaderPreset::ShaderPresetRead(preset_file file, video_shader &shader)
   return true;
 }
 
-void CShaderPreset::ShaderPresetWrite(preset_file file, const video_shader &shader)
+bool CShaderPreset::ShaderPresetWrite(preset_file file, const video_shader &shader)
 {
   shader_preset_file *preset_file = static_cast<shader_preset_file*>(file);
+  if (preset_file == nullptr)
+    return false;
 
   rarch_video_shader rarch_shader;
 
   CRarchTranslator::TranslateShader(shader, rarch_shader, preset_file->path);
 
-  video_shader_write_preset(preset_file->rarch_conf->path, &rarch_shader, false);
+  const bool success = video_shader_write_preset(preset_file->rarch_conf->path, &rarch_shader, false);
 
   CRarchTranslator::FreeShader(rarch_shader);
+
+  return success;
 }
 
 bool CShaderPreset::ShaderPresetResolveParameters(preset_file file, video_shader &shader)
 {
   shader_preset_file *preset_file = static_cast<shader_preset_file*>(file);
+  if (preset_file == nullptr)
+    return false;
 
   rarch_video_shader rarch_shader;
 
@@ -147,6 +157,7 @@ void CShaderPreset::ShaderPresetFree(video_shader &shader)
     delete[] pass.source_path;
     delete[] pass.vertex_source;
     delete[] pass.fragment_source;
+    delete[] pass.alias;
   }
   delete[] shader.passes;
 
