@@ -19,11 +19,13 @@
     </assets>
     <summary lang="en_GB">Shader Preset Support</summary>
     <summary lang="es_ES">Soporte de Preajustes de Sombreado</summary>
+    <summary lang="it_IT">Supporto preset shader</summary>
     <summary lang="ru_RU">Поддержка предустановок шейдеров</summary>
     <summary lang="sv_SE">Stöd för shader-förval</summary>
     <summary lang="zh_CN">着色器预设支持</summary>
     <description lang="en_GB">This library provides support for libretro meta shaders.</description>
     <description lang="es_ES">Esta librería soporta meta-sombreados de libretro.</description>
+    <description lang="it_IT">Questa libreria fornisce supporto per i meta shader libretro.</description>
     <description lang="ru_RU">Эта библиотека обеспечивает поддержку меташейдеров libretro.</description>
     <description lang="sv_SE">Detta bibliotek ger stöd för libretros meta-shaders.</description>
     <description lang="zh_CN">该库支持 libretro 元着色器。</description>
