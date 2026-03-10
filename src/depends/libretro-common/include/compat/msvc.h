@@ -57,17 +57,6 @@ extern "C"  {
 #define _USE_MATH_DEFINES
 #include <math.h>
 
-/* Python headers defines ssize_t and sets HAVE_SSIZE_T.
- * Cannot duplicate these efforts.
- */
-#ifndef HAVE_SSIZE_T
-#if defined(_WIN64)
-typedef __int64 ssize_t;
-#elif defined(_WIN32)
-typedef int ssize_t;
-#endif
-#endif
-
 #define mkdir(dirname, unused) _mkdir(dirname)
 #define strtoull _strtoui64
 #undef strcasecmp
