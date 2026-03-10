@@ -58,23 +58,6 @@ special technique is called for.
 
 #endif
 
-/*
-IMO, this non-standard ssize_t should not be used.
-However, it's a good example of how to handle something like this.
-*/
-#ifdef _MSC_VER
-#ifndef HAVE_SSIZE_T
-#define HAVE_SSIZE_T
-#if defined(_WIN64)
-typedef __int64 ssize_t;
-#elif defined(_WIN32)
-typedef int ssize_t;
-#endif
-#endif
-#elif defined(__MACH__)
-#include <sys/types.h>
-#endif
-
 #ifdef _MSC_VER
 #if _MSC_VER >= 1800
 #include <inttypes.h>
