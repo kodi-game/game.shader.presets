@@ -140,6 +140,7 @@ bool CShaderPreset::ShaderPresetResolveParameters(preset_file file, video_shader
   CRarchTranslator::TranslateShader(shader, rarch_shader, preset_file->path);
 
   video_shader_resolve_parameters(&rarch_shader);
+  video_shader_load_current_parameter_values(preset_file->rarch_conf, &rarch_shader);
 
   ShaderPresetFree(shader);
   CRarchTranslator::TranslateShader(rarch_shader, shader, preset_file->path);
