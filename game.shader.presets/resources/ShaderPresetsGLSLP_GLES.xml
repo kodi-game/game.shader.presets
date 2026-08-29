@@ -21,6 +21,16 @@
         <name>Advanced AA</name>
     </preset>
     <preset>
+        <path>glsl/xbr/xbr-lv2.glslp</path>
+        <folder>xBR</folder>
+        <name>xBR-lv2</name>
+    </preset>
+    <preset>
+        <path>glsl/xbr/xbr-lv2-noblend.glslp</path>
+        <folder>xBR</folder>
+        <name>xBR-lv2 (no blend)</name>
+    </preset>
+    <preset>
         <path>glsl/xbr/xbr-lv3.glslp</path>
         <folder>xBR</folder>
         <name>xBR-lv3</name>
