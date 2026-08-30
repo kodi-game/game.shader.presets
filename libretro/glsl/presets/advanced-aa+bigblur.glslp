@@ -1,0 +1,52 @@
+shaders = 10
+
+shader0 = ../anti-aliasing/shaders/advanced-aa.glsl
+alias0 = Reference
+filter_linear0 = false
+scale_type0 = source
+scale_x0 = 2.0
+scale_y0 = 2.0
+
+shader1 = ../stock.glsl
+filter_linear1 = true
+scale_type1 = source
+scale_x1 = 0.5
+scale_y1 = 0.5
+
+shader2 = ../blurs/shaders/kawase/linearize.glsl
+srgb_framebuffer2 = true
+scale_type2 = source
+
+shader3 = ../blurs/shaders/kawase/kawase0.glsl
+filter_linear3 = true
+srgb_framebuffer3 = true
+scale_type3 = source
+
+shader4 = ../blurs/shaders/kawase/kawase1.glsl
+filter_linear4 = true
+srgb_framebuffer4 = true
+scale_type4 = source
+
+shader5 = ../blurs/shaders/kawase/kawase1.glsl
+filter_linear5 = true
+srgb_framebuffer5 = true
+scale_type5 = source
+
+shader6 = ../blurs/shaders/kawase/kawase2.glsl
+filter_linear6 = true
+srgb_framebuffer6 = true
+scale_type6 = source
+
+shader7 = ../blurs/shaders/kawase/kawase3.glsl
+filter_linear7 = true
+srgb_framebuffer7 = true
+scale_type7 = source
+
+shader8 = ../blurs/shaders/kawase/delinearize.glsl
+filter_linear8 = true
+
+shader9 = ../borders/resources/bigblur.glsl
+filter_linear9 = true
+
+parameters = "integer_scale"
+integer_scale = "0.000000"

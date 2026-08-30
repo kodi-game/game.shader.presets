@@ -133,7 +133,7 @@ uniform COMPAT_PRECISION vec2 OutputSize;
 uniform COMPAT_PRECISION vec2 TextureSize;
 uniform COMPAT_PRECISION vec2 InputSize;
 uniform sampler2D Texture;
-uniform sampler2D OrigTexture;
+uniform sampler2D ReferenceTexture;
 COMPAT_VARYING vec4 TEX0;
 COMPAT_VARYING vec2 tex_border;
 
@@ -204,6 +204,6 @@ vec4 border(vec2 texture_size, vec2 video_size, vec2 output_size,
 void main()
 {
     FragColor = border(TextureSize, InputSize, OutputSize,
-		float(FrameCount), vTexCoord, Source, tex_border, OrigTexture);
+		float(FrameCount), vTexCoord, Source, tex_border, ReferenceTexture);
 } 
 #endif

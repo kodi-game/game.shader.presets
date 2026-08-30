@@ -2,6 +2,7 @@ shaders = 9
 
 shader0 = ../stock.glsl
 alias0 = Reference
+filter_linear0 = false
 
 shader1 = ../blurs/shaders/kawase/linearize.glsl
 srgb_framebuffer1 = true

@@ -51,11 +51,6 @@
         <name>xBRZ Freescale</name>
     </preset>
     <preset>
-        <path>glsl/crt/crt-hyllian.glslp</path>
-        <folder>CRT</folder>
-        <name>CRT Hyllian</name>
-    </preset>
-    <preset>
         <path>glsl/crt/crt-easymode.glslp</path>
         <folder>CRT</folder>
         <name>CRT EasyMode</name>
@@ -64,6 +59,11 @@
         <path>glsl/crt/crt-easymode-halation.glslp</path>
         <folder>CRT</folder>
         <name>CRT EasyMode Halation</name>
+    </preset>
+    <preset>
+        <path>glsl/crt/crt-hyllian.glslp</path>
+        <folder>CRT</folder>
+        <name>CRT Hyllian</name>
     </preset>
     <preset>
         <path>glsl/crt/crtglow_lanczos.glslp</path>
@@ -81,14 +81,14 @@
         <name>CRT Geom</name>
     </preset>
     <preset>
-        <path>glsl/crt/crt-consumer.glslp</path>
-        <folder>CRT</folder>
-        <name>CRT Consumer</name>
-    </preset>
-    <preset>
         <path>glsl/crt/crt-lottes-alpha.glslp</path>
         <folder>CRT</folder>
         <name>CRT Lottes</name>
+    </preset>
+    <preset>
+        <path>glsl/crt/crt-consumer.glslp</path>
+        <folder>CRT</folder>
+        <name>CRT Consumer</name>
     </preset>
     <preset>
         <path>glsl/pal/Amiga_a520.glslp</path>
@@ -121,6 +121,26 @@
         <name>PSP Color</name>
     </preset>
     <preset>
+        <path>glsl/handheld/console-border/gg-4x.glslp</path>
+        <folder>Console</folder>
+        <name>Game Gear 4x</name>
+    </preset>
+    <preset>
+        <path>glsl/handheld/console-border/gbc-4x.glslp</path>
+        <folder>Console</folder>
+        <name>Game Boy Color 4x</name>
+    </preset>
+    <preset>
+        <path>glsl/handheld/console-border/psp-2x.glslp</path>
+        <folder>Console</folder>
+        <name>PlayStation Portable 2x</name>
+    </preset>
+    <preset>
+        <path>glsl/bezel/uborder/base_presets/uborder-bezel-reflections/uborder-bezel-reflections-crt-nobody.glslp</path>
+        <folder>Bezel</folder>
+        <name>Uborder</name>
+    </preset>
+    <preset>
         <path>glsl/borders/bigblur.glslp</path>
         <folder>Borders</folder>
         <name>Big blur</name>
@@ -141,13 +161,13 @@
         <name>Snow</name>
     </preset>
     <preset>
-        <path>glsl/handheld/console-border/gbc-4x.glslp</path>
-        <folder>Console</folder>
-        <name>GBC 4x</name>
+        <path>glsl/presets/super-eagle+bigblur.glslp</path>
+        <folder>Presets</folder>
+        <name>Super Eagle + Big blur</name>
     </preset>
     <preset>
-        <path>glsl/handheld/console-border/psp-2x.glslp</path>
-        <folder>Console</folder>
-        <name>PSP 2x</name>
+        <path>glsl/presets/advanced-aa+bigblur.glslp</path>
+        <folder>Presets</folder>
+        <name>Advanced AA + Big blur</name>
     </preset>
 </presets>

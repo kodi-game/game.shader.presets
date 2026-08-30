@@ -29,7 +29,7 @@
    THE SOFTWARE.
 */
 
-#version 120
+#version 150
 
 #pragma parameter all_nonono           "ALL:"                             0.0    0.0   1.0 1.0
 #pragma parameter all_zoom             "    Zoom %"                     100.0   20.0 200.0 1.0
@@ -359,6 +359,7 @@ void main()
 #elif defined(FRAGMENT)
 
 #if __VERSION__ >= 130
+#undef COMPAT_VARYING
 #define COMPAT_VARYING in
 #define COMPAT_TEXTURE texture
 out vec4 FragColor;
