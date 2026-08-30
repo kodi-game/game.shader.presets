@@ -116,11 +116,6 @@
         <name>PlayStation Portable 2x</name>
     </preset>
     <preset>
-        <path>glsl/bezel/uborder/base_presets/uborder-bezel-reflections/uborder-bezel-reflections-crt-nobody.glslp</path>
-        <folder>Bezel</folder>
-        <name>Uborder</name>
-    </preset>
-    <preset>
         <path>glsl/borders/bigblur.glslp</path>
         <folder>Borders</folder>
         <name>Big blur</name>
