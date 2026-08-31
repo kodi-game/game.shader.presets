@@ -1,4 +1,4 @@
-#version 110
+#version 150
 
 /*
     zfast_crt_composite, A very simple CRT shader
