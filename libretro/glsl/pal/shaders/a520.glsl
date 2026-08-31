@@ -1,4 +1,3 @@
-#version 130
 
 /*
     A modification of Retroarch PAL Shader 

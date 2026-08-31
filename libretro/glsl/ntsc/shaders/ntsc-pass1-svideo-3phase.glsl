@@ -1,4 +1,3 @@
-#version 130
 
 #define THREE_PHASE
 #define SVIDEO
