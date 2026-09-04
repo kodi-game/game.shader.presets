@@ -1,4 +1,4 @@
-#version 130
+#version 150
 
 #define fetch_offset(offset, one_x) \
    COMPAT_TEXTURE(Source, vTexCoord + vec2((offset) * (one_x), 0.0)).xyz
