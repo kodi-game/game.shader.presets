@@ -1,6 +1,21 @@
 <?xml version="1.0" ?>
 <presets>
     <preset>
+        <path>hlsl/scalehq/4xScaleHQ.cgp</path>
+        <folder>Scale</folder>
+        <name>4x ScaleHQ</name>
+    </preset>
+    <preset>
+        <path>hlsl/hqx/single-pass/hq2x.cgp</path>
+        <folder>Scale</folder>
+        <name>HQ2x</name>
+    </preset>
+    <preset>
+        <path>hlsl/sabr/sabr-v3.0.cgp</path>
+        <folder>Scale</folder>
+        <name>SABR v3.0</name>
+    </preset>
+    <preset>
         <path>hlsl/scalenx/scale2x.cgp</path>
         <folder>Scale</folder>
         <name>Scale 2x</name>
@@ -16,9 +31,54 @@
         <name>Super Eagle</name>
     </preset>
     <preset>
+        <path>hlsl/anti-aliasing/aa-shader-4.o-level2.cgp</path>
+        <folder>Anti-Aliasing</folder>
+        <name>AA Shader 4.0 Level 2</name>
+    </preset>
+    <preset>
         <path>hlsl/anti-aliasing/advanced-aa.cgp</path>
         <folder>Anti-Aliasing</folder>
         <name>Advanced AA</name>
+    </preset>
+    <preset>
+        <path>hlsl/anti-aliasing/fx-aa.cgp</path>
+        <folder>Anti-Aliasing</folder>
+        <name>FXAA</name>
+    </preset>
+    <preset>
+        <path>hlsl/anti-aliasing/reverse-aa.cgp</path>
+        <folder>Anti-Aliasing</folder>
+        <name>Reverse AA</name>
+    </preset>
+    <preset>
+        <path>hlsl/borders/color-grid.cgp</path>
+        <folder>Borders</folder>
+        <name>Color Grid</name>
+    </preset>
+    <preset>
+        <path>hlsl/bicubic/bicubic-sharp.cgp</path>
+        <folder>Interpolation</folder>
+        <name>Bicubic Sharp</name>
+    </preset>
+    <preset>
+        <path>hlsl/ddt/ddt-extended.cgp</path>
+        <folder>Interpolation</folder>
+        <name>DDT Extended</name>
+    </preset>
+    <preset>
+        <path>hlsl/windowed/jinc2-sharp.cgp</path>
+        <folder>Interpolation</folder>
+        <name>Jinc2 Sharp</name>
+    </preset>
+    <preset>
+        <path>hlsl/interpolation/pixellate.cgp</path>
+        <folder>Interpolation</folder>
+        <name>Pixellate</name>
+    </preset>
+    <preset>
+        <path>hlsl/interpolation/sharp-bilinear.cgp</path>
+        <folder>Interpolation</folder>
+        <name>Sharp Bilinear</name>
     </preset>
     <preset>
         <path>hlsl/xbr/xbr-lv2-fast.cgp</path>
@@ -36,9 +96,24 @@
         <name>xBR-lv3 (no blend)</name>
     </preset>
     <preset>
+        <path>hlsl/xbrz/4xbrz-linear.cgp</path>
+        <folder>xBRZ</folder>
+        <name>4xBRZ Linear</name>
+    </preset>
+    <preset>
         <path>hlsl/crt/4xbr-hybrid-crt.cgp</path>
         <folder>CRT</folder>
         <name>4xBR Hybrid</name>
+    </preset>
+    <preset>
+        <path>hlsl/crt/crt-aperture.cgp</path>
+        <folder>CRT</folder>
+        <name>CRT Aperture</name>
+    </preset>
+    <preset>
+        <path>hlsl/crt/crt-cgwg-fast.cgp</path>
+        <folder>CRT</folder>
+        <name>CRT CGWG Fast</name>
     </preset>
     <preset>
         <path>hlsl/crt/crt-geom.cgp</path>
@@ -46,9 +121,34 @@
         <name>CRT Geom</name>
     </preset>
     <preset>
+        <path>hlsl/crt/crt-hyllian.cgp</path>
+        <folder>CRT</folder>
+        <name>CRT Hyllian</name>
+    </preset>
+    <preset>
+        <path>hlsl/crt/crt-hyllian-fast.cgp</path>
+        <folder>CRT</folder>
+        <name>CRT Hyllian Fast</name>
+    </preset>
+    <preset>
         <path>hlsl/crt/crt-lottes.cgp</path>
         <folder>CRT</folder>
         <name>CRT Lottes</name>
+    </preset>
+    <preset>
+        <path>hlsl/crt/crt-nes-mini.cgp</path>
+        <folder>CRT</folder>
+        <name>CRT NES Mini</name>
+    </preset>
+    <preset>
+        <path>hlsl/crt/dotmask.cgp</path>
+        <folder>CRT</folder>
+        <name>Dotmask</name>
+    </preset>
+    <preset>
+        <path>hlsl/dithering/gdapt.cgp</path>
+        <folder>Effects</folder>
+        <name>GDAPT</name>
     </preset>
     <preset>
         <path>hlsl/pal/pal-singlepass.cgp</path>
@@ -61,6 +161,36 @@
         <name>NTSC</name>
     </preset>
     <preset>
+        <path>hlsl/ntsc/ntsc-256px-svideo.cgp</path>
+        <folder>NTSC</folder>
+        <name>NTSC S-Video</name>
+    </preset>
+    <preset>
+        <path>hlsl/ntsc/ntsc-vcr.cgp</path>
+        <folder>NTSC</folder>
+        <name>NTSC VCR</name>
+    </preset>
+    <preset>
+        <path>hlsl/cgp/tvout/tvout.cgp</path>
+        <folder>TV</folder>
+        <name>TVout</name>
+    </preset>
+    <preset>
+        <path>hlsl/cgp/tvout/tvout+ntsc-256px-composite.cgp</path>
+        <folder>TV</folder>
+        <name>TVout + NTSC Composite</name>
+    </preset>
+    <preset>
+        <path>hlsl/cgp/tvout/tvout+ntsc-320px-svideo.cgp</path>
+        <folder>TV</folder>
+        <name>TVout + NTSC S-Video</name>
+    </preset>
+    <preset>
+        <path>hlsl/handheld/bevel.cgp</path>
+        <folder>Handheld</folder>
+        <name>Bevel</name>
+    </preset>
+    <preset>
         <path>hlsl/handheld/lcd3x.cgp</path>
         <folder>Handheld</folder>
         <name>LCD3x</name>
@@ -69,5 +199,30 @@
         <path>hlsl/cgp/gameboy-screen-grid.cgp</path>
         <folder>Handheld</folder>
         <name>Game Boy</name>
+    </preset>
+    <preset>
+        <path>hlsl/cgp/gameboy-colors.cgp</path>
+        <folder>Handheld</folder>
+        <name>Game Boy Colors</name>
+    </preset>
+    <preset>
+        <path>hlsl/handheld/lcd-grid-v2-gba-color.cgp</path>
+        <folder>Handheld</folder>
+        <name>LCD Grid v2 (GBA)</name>
+    </preset>
+    <preset>
+        <path>hlsl/handheld/lcd-grid-v2-nds-color.cgp</path>
+        <folder>Handheld</folder>
+        <name>LCD Grid v2 (NDS)</name>
+    </preset>
+    <preset>
+        <path>hlsl/handheld/lcd-grid-v2-psp-color.cgp</path>
+        <folder>Handheld</folder>
+        <name>LCD Grid v2 (PSP)</name>
+    </preset>
+    <preset>
+        <path>hlsl/cgp/retro-v2+gba-color.cgp</path>
+        <folder>Handheld</folder>
+        <name>Retro v2 + GBA Color</name>
     </preset>
 </presets>
