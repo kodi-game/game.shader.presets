@@ -1,4 +1,3 @@
-#version 110
 
 /* 
 crt-consumer by DariusG 2022-2024
