@@ -1,4 +1,3 @@
-#version 110
 
 /*
     zfast_crt_geo_svideo - A simple, fast CRT shader.
