@@ -110,16 +110,6 @@ void main()
 
 #elif defined(FRAGMENT)
 
-#if __VERSION__ >= 130
-#define IN in
-#define tex2D texture
-out vec4 FragColor;
-#else
-#define IN varying
-#define FragColor gl_FragColor
-#define tex2D texture2D
-#endif
-
 #ifdef GL_ES
 #ifdef GL_FRAGMENT_PRECISION_HIGH
 precision highp float;
@@ -129,6 +119,16 @@ precision mediump float;
 #define PRECISION mediump
 #else
 #define PRECISION
+#endif
+
+#if __VERSION__ >= 130
+#define IN in
+#define tex2D texture
+out vec4 FragColor;
+#else
+#define IN varying
+#define FragColor gl_FragColor
+#define tex2D texture2D
 #endif
 
 uniform PRECISION int FrameDirection;
