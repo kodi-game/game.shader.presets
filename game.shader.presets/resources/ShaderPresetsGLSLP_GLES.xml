@@ -106,11 +106,6 @@
         <name>LCD3x</name>
     </preset>
     <preset>
-        <path>glsl/handheld/lcd-shader-psp-color.glslp</path>
-        <folder>Handheld</folder>
-        <name>PSP Color</name>
-    </preset>
-    <preset>
         <path>glsl/handheld/console-border/gg-4x.glslp</path>
         <folder>Console</folder>
         <name>Game Gear 4x</name>
