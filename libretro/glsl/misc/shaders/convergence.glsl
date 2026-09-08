@@ -1,4 +1,3 @@
-#version 110
 
 /*
 convergence pass DariusG 2023. 

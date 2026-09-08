@@ -1,4 +1,4 @@
-#version 130
+#version 150
 
 /*
    Hyllian's xBR-lv2 Shader

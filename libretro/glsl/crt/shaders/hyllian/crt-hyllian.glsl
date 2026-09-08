@@ -23,7 +23,7 @@
 
 */
 
-#version 120
+#version 150
 
 #pragma parameter BEAM_PROFILE "BEAM PROFILE (BP)" 0.0 0.0 6.0 1.0
 #pragma parameter BEAM_MIN_WIDTH "  Custom [If   BP=0.00] MIN BEAM WIDTH" 0.86 0.0 1.0 0.02
