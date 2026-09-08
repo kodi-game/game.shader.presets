@@ -56,6 +56,31 @@
         <name>Color Grid</name>
     </preset>
     <preset>
+        <path>hlsl/borders/gameboy-player/gameboy-player.cgp</path>
+        <folder>Borders</folder>
+        <name>Game Boy Player</name>
+    </preset>
+    <preset>
+        <path>hlsl/borders/gameboy-player/gameboy-player-gba-color.cgp</path>
+        <folder>Borders</folder>
+        <name>Game Boy Player + GBA Color</name>
+    </preset>
+    <preset>
+        <path>hlsl/borders/sgb/sgb.cgp</path>
+        <folder>Borders</folder>
+        <name>Super Game Boy</name>
+    </preset>
+    <preset>
+        <path>hlsl/borders/sgba/sgba.cgp</path>
+        <folder>Borders</folder>
+        <name>Super Game Boy Advance</name>
+    </preset>
+    <preset>
+        <path>hlsl/borders/sgba/sgba-gba-color.cgp</path>
+        <folder>Borders</folder>
+        <name>Super Game Boy Advance + GBA Color</name>
+    </preset>
+    <preset>
         <path>hlsl/bicubic/bicubic-sharp.cgp</path>
         <folder>Interpolation</folder>
         <name>Bicubic Sharp</name>

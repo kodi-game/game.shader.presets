@@ -2,8 +2,9 @@
 
 This is the finalized static and runtime-qualified compatibility ledger for Kodi RetroPlayer on Windows. The static audit maps renderer blockers and fidelity limitations across the complete HLSL preset tree; the exposed Windows catalog was then qualified in Kodi for compilation, resources, switching, and visual output on the audited runtime described below.
 
-- Audited libretro commit: `524835ca394e5fd1bf459c5090222d7159f5a5dc`
+- Original audited libretro commit: `524835ca394e5fd1bf459c5090222d7159f5a5dc`
 - HLSL presets audited: 599
+- Stock-pass update: the five border presets below were re-audited and runtime-tested on 2026-09-08; their new filter fields are included in the filter/wrap list.
 - Audit scope: every `libretro/hlsl/**/*.cgp` preset and every shader `#include` reachable from its `shaderN` entries
 
 ## Methodology
@@ -26,7 +27,7 @@ A non-empty pass alias is a hard blocker only when its exact identifier is refer
 | Float and sRGB framebuffers | Supported | Eligible |
 | Source and viewport scaling | Supported | Eligible |
 | Absolute scaling on an intermediate pass | Supported | Eligible |
-| Explicit absolute FBO scaling on the final pass | Unsupported; the requested fixed output size is discarded | Hard runtime blocker for affected border presets |
+| Explicit absolute FBO scaling on the final pass | Unsupported; the final pass uses the output size | Affected border presets now keep absolute scaling on an intermediate pass and append a stock final pass |
 | Frame count | Supported | Eligible |
 | Frame history, feedback, or `PREV` resources | Unsupported | Hard blocker |
 | `ORIG`, `PASSPREV`, or arbitrary numbered `PASS` resources | Unsupported | Hard blocker |
@@ -35,17 +36,25 @@ A non-empty pass alias is a hard blocker only when its exact identifier is refer
 | Intermediate mipmaps | Not faithfully supplied | Runtime fidelity qualification |
 | LUT wrap mode | Not faithfully applied | Runtime fidelity qualification |
 
-## Runtime blocker: explicit absolute final-pass FBO scaling
+## Resolved: fixed-size borders with a stock final pass
 
-5 presets.
+5 retained presets.
 
-Kodi's Windows D3D path supports fixed-size intermediate render targets, but it does not preserve an explicit absolute size when that scaled pass is the final preset pass. The post-UV1 SGB retest made the border visible but still produced a tiny, streaked game image because the requested 256x224 final-pass FBO size was discarded. Implementing final-pass FBO scaling would make these five presets eligible for runtime qualification:
+Each preset appends the existing `../../stock.cg` with `filter_linearN = "false"` and no scaling override. The formerly-final border pass retains its absolute dimensions and renders into an intermediate FBO; the stock pass presents that result at the normal output size. Existing shader indices, parameters, LUTs, and per-pass settings remain unchanged. The new pass does not introduce linear filtering.
 
-- `hlsl/borders/gameboy-player/gameboy-player.cgp`
-- `hlsl/borders/gameboy-player/gameboy-player-gba-color.cgp`
-- `hlsl/borders/sgb/sgb.cgp`
-- `hlsl/borders/sgba/sgba.cgp`
-- `hlsl/borders/sgba/sgba-gba-color.cgp`
+All five passed fresh visible-process runtime tests on rebuilt Windows D3D Kodi `7359a075f1218d2c801b6007fcb6752d322d5f19`, without renderer changes from PR #29242. Each run selected the exact expected `RetroPlayer.VideoFilter` path, produced a visually reviewed border/game composite, matched zero documented shader failure signatures, and shut down normally.
+
+Evidence paths below are relative to `.superpowers/sdd/2026-08-29-final-pass-absolute-fbo-scaling/runtime-stock-pass-752e045-visible/`. Each directory contains a screenshot, Kodi log, automated result, and failure-signature scan; `reviewed-results.json` records the five visual passes.
+
+| Preset | Absolute intermediate pass | Stock final pass | Result and evidence |
+| --- | --- | --- | --- |
+| `hlsl/borders/gameboy-player/gameboy-player.cgp` | 0: 608x448 | 1 | **PASS** — `01-borders_gameboy-player_gameboy-player.cgp/` |
+| `hlsl/borders/gameboy-player/gameboy-player-gba-color.cgp` | 1: 608x448 | 2 | **PASS** — `02-borders_gameboy-player_gameboy-player-gba-color.cgp/` |
+| `hlsl/borders/sgb/sgb.cgp` | 0: 256x224 | 1 | **PASS** — `03-borders_sgb_sgb.cgp/` |
+| `hlsl/borders/sgba/sgba.cgp` | 0: 320x240 | 1 | **PASS** — `04-borders_sgba_sgba.cgp/` |
+| `hlsl/borders/sgba/sgba-gba-color.cgp` | 1: 320x240 | 2 | **PASS** — `05-borders_sgba_sgba-gba-color.cgp/` |
+
+Tests used xrick as input in an isolated portable profile with the API 8.1 libretro bridge. They validate these preset chains, not every Game Boy/GBA core or display size. Deployed presets and LUTs matched source hashes; shaders and transitive includes matched source content apart from line endings. This removes the need for PR #29242 for these five presets, while absolute scaling on an actual final pass remains unsupported.
 
 ## Hard blocker: frame history or feedback
 
@@ -273,7 +282,7 @@ Kodi's Windows D3D path supports fixed-size intermediate render targets, but it 
 
 ## Fidelity limitation: preset-controlled filter or wrap mode
 
-565 presets. This group is not automatically rejected; it requires visual runtime qualification.
+569 presets. This group is not automatically rejected; it requires visual runtime qualification.
 
 - `hlsl/anti-aliasing/aa-shader-4.o-level2.cgp`
 - `hlsl/anti-aliasing/aa-shader-4.o.cgp`
@@ -425,8 +434,12 @@ Kodi's Windows D3D path supports fixed-size intermediate render targets, but it 
 - `hlsl/blurs/quality-test-presets/test-blur9x9-gamma-encode-every-fbo.cgp`
 - `hlsl/blurs/quality-test-presets/test-blur9x9-srgb.cgp`
 - `hlsl/borders/bigblur.cgp`
+- `hlsl/borders/gameboy-player/gameboy-player-gba-color.cgp`
+- `hlsl/borders/gameboy-player/gameboy-player.cgp`
 - `hlsl/borders/gameboy-player/gameboy-player+crt-royale.cgp`
+- `hlsl/borders/sgb/sgb.cgp`
 - `hlsl/borders/sgb/sgb+crt-royale.cgp`
+- `hlsl/borders/sgba/sgba.cgp`
 - `hlsl/borders/sgba/sgba-gba-color.cgp`
 - `hlsl/borders/sgba/sgba-gba-color+crt-easymode-halation.cgp`
 - `hlsl/cgp/2x2xscalehq.cgp`
@@ -975,7 +988,7 @@ The original qualification matrix was run on Windows with Kodi `22.0-BETA2 (21.9
 
 Each of the 55 Task 1 additions was selected in one fresh, visible, portable Kodi process. Qualification required an exact `RetroPlayer.VideoFilter` absolute-path match, a recognizable full-screen XRick composite screenshot, inspection of the complete fresh `kodi.log`, a scan for shader/parser/resource/D3D/LUT failures, and bounded shutdown. All 55 paths matched and all 55 screenshots were inspected. The first pass produced 29 clean normal-shutdown runs, 23 runs with documented shader failures, and three clean force-stop-only runs. The latter three (`DDT Extended`, `4x ScaleHQ`, and `Retro v2 + GBA Color`) each passed a fresh exact-path, clean-log, visually acceptable, normal-shutdown retest. Six isolated runs required the executable-guarded bounded force stop; three already had decisive shader failures, and the other three passed the normal-shutdown retests.
 
-The final result is 31 retained additions and 24 removals, leaving 45 Windows HLSL presets total (the 14 pre-existing entries plus 31 additions). FXAA passed isolated and live-switch qualification after its wrapper correction. SGB remained removed after the Kodi UV1 fix exposed a separate final-pass FBO-scaling blocker. Evidence below is relative to `.superpowers/sdd/2026-08-29-expand-windows-shader-presets/`. The static-feature column maps a retained preset to renderer fidelity work that could still improve it; `none` means the static audit found no unsupported feature in the audited categories.
+The original result was 31 retained additions and 24 removals, leaving 45 Windows HLSL presets. FXAA passed isolated and live-switch qualification after its wrapper correction. Appending stock final passes now resolves SGB's separate scaling blocker and qualifies four related border presets: the current catalog contains 50 entries, comprising 14 pre-existing entries and 36 retained additions, with 23 removals across 59 evaluated additions. The five border presets passed the 2026-09-08 runtime tests described above. Evidence below is relative to `.superpowers/sdd/2026-08-29-expand-windows-shader-presets/` unless otherwise stated. The static-feature column maps a retained preset to renderer fidelity work that could still improve it; `none` means the static audit found no unsupported feature in the audited categories.
 
 ### Addition results
 
@@ -1032,7 +1045,7 @@ The final result is 31 retained additions and 24 removals, leaving 45 Windows HL
 | 49 | `hlsl/handheld/console-border/gbc-4x.cgp` | filter/wrap; LUT wrap | **REMOVE** — HLSL X3014 numeric-constructor argument count; shader initialization failed. | `runtime-isolated/49-handheld_console-border_gbc-4x.cgp/` |
 | 50 | `hlsl/handheld/console-border/psp-2x.cgp` | filter/wrap; LUT wrap | **REMOVE** — No FX11 `TEQ` technique/`P0` pass in shader pass 1: PSP legacy Cg-to-FX11 port requiring further semantic, binding, and compiler work. Kodi now supplies a valid `TEXCOORD1` in its 28-byte vertex input, but that cannot synthesize the missing effect technique; the original screenshot was visibly corrupt. | `runtime-isolated/50-handheld_console-border_psp-2x.cgp/` |
 | 51 | `hlsl/borders/imgborder.cgp` | none | **REMOVE** — HLSL X3004 undeclared `mix`; shader initialization failed. | `runtime-isolated/51-borders_imgborder.cgp/` |
-| 52 | `hlsl/borders/sgb/sgb.cgp` | absolute final-pass FBO scaling | **REMOVE** — The Kodi UV1 fix corrected the invalid 20-byte vertex-input contract and made the border visible, but the image remained tiny and streaked because Kodi discarded the final pass's explicit 256x224 absolute scale. The retest had the exact active path, zero documented failure signatures, and normal shutdown. | Original visual failure: `runtime-isolated/52-borders_sgb_sgb.cgp/`; post-UV1 retest: `runtime-sgb-uv1-fixed/32-borders_sgb_sgb.cgp/` |
+| 52 | `hlsl/borders/sgb/sgb.cgp` | filter/wrap | **PASS (previously REMOVE)** — The stock final pass leaves the border shader's 256x224 absolute target on intermediate pass 0. On Kodi `7359a075`, the updated preset produced the expected border/game composite with an exact active path, zero documented shader failure signatures, and normal shutdown. | Original visual failure: `runtime-isolated/52-borders_sgb_sgb.cgp/`; post-UV1 retest: `runtime-sgb-uv1-fixed/32-borders_sgb_sgb.cgp/`; stock-pass result: `../2026-08-29-final-pass-absolute-fbo-scaling/runtime-stock-pass-752e045-visible/03-borders_sgb_sgb.cgp/` |
 | 53 | `hlsl/borders/water.cgp` | none | **REMOVE** — HLSL X3004 undeclared `vec4`; shader initialization failed. | `runtime-isolated/53-borders_water.cgp/` |
 | 54 | `hlsl/mudlord/oldtv.cgp` | filter/wrap | **REMOVE** — No FX11 `TEQ` technique/`P0` pass: oldtv legacy Cg-to-FX11 port requiring further semantic, binding, and compiler work; screenshot visibly corrupt. | `runtime-isolated/54-mudlord_oldtv.cgp/` |
 | 55 | `hlsl/waterpaint/waterpaint.cgp` | filter/wrap | **REMOVE** — HLSL X3037 constructor used a non-numeric base type; shader initialization failed. | `runtime-isolated/55-waterpaint_waterpaint.cgp/` |
@@ -1043,7 +1056,7 @@ The final result is 31 retained additions and 24 removals, leaving 45 Windows HL
 - **Resolved FXAA modern-wrapper omission (1 retained preset):** 12 now ends with `COMPAT_END`. Preprocessing under Kodi's defines emits named `TEQ`/`P0`, both direct stages compile, the complete FX11 effect compiles and reflects that technique/pass, the current-source add-on build completes, and isolated plus live-switch runtime qualification passed. The old failure evidence remains linked to preserve the diagnosis.
 - **No FX11 `TEQ` technique/`P0` pass — legacy Cg-to-FX11 ports (3 removals):** 20 (`adaptive-sharpen`, pass 0), 50 (PSP `gb-pass-5`, pass 1), and 54 (`oldtv`, pass 0) are zero-technique legacy Cg sources that need real FX11 ports, including semantic, resource/uniform binding, and compiler work; merely appending a technique is not sufficient. Kodi now supplies PSP's genuine `TEXCOORD1` input through its corrected 28-byte vertex format, so the remaining blocker is the shader port rather than missing vertex data.
 - **Resolved Kodi input-contract and diagnostic bugs:** Effects11 accepted zero-technique sources as effect containers. Kodi previously queried technique/pass index 0, received the invalid sentinel, and failed `GetDesc` before `ID3D11Device::CreateInputLayout`; the old “input-layout creation” label described the propagated log, not the cause. Kodi now resolves the named `TEQ` technique and validates its pass at index 0, then uses that same pass consistently for reflection and layout creation while reporting the preset/pass/technique accurately. It also supplies in-bounds `TEXCOORD1` data through a 28-byte vertex layout instead of declaring UV1 beyond the old 20-byte stride. These corrections improve correctness and diagnosis but do not port the three remaining legacy sources.
-- **Explicit absolute final-pass FBO scaling (1 tested removal; 5 presets affected):** 52 (`hlsl/borders/sgb/sgb.cgp`) remained tiny and streaked after UV1 made its border visible because Kodi discarded the pass's explicit 256x224 final output size. Implementing this renderer feature would make `hlsl/borders/gameboy-player/gameboy-player.cgp`, `hlsl/borders/gameboy-player/gameboy-player-gba-color.cgp`, `hlsl/borders/sgb/sgb.cgp`, `hlsl/borders/sgba/sgba.cgp`, and `hlsl/borders/sgba/sgba-gba-color.cgp` eligible for qualification.
+- **Resolved border scaling through stock final passes (5 retained presets):** SGB's tiny, streaked image came from discarding its absolute size on the final pass. The five presets listed above now retain their fixed-size border pass as an intermediate FBO and append an output-sized stock pass with nearest filtering. All five passed isolated runtime and visual qualification on unchanged Kodi `7359a075`; no final-pass renderer feature is required for them.
 - **Other valid-looking load with unusable visual output (1 removal):** 39 emitted no documented shader/resource/D3D/LUT signature, but its full-resolution composite was black except for the cursor. Future work needs output/pass-chain investigation rather than compiler repair.
 - **Static renderer feature gaps:** the exhaustive frame-history/feedback, original/non-immediate-pass, pass-alias, filter/wrap, intermediate-mipmap, and LUT-wrap lists above remain the authoritative maps from missing renderer features to the full set of presets they may unlock or improve. No missing-source, LUT-load, texture-load, sampler, or target-texture failure was observed in the retained set.
 
@@ -1061,3 +1074,5 @@ The four original regression presets were rerun after Kodi's named-technique and
 | CRT Geom — `hlsl/crt/crt-geom.cgp` | filter/wrap | **PASS** — post-fix fresh process, exact path, zero documented failure signatures, acceptable composite, normal shutdown. | `runtime-kodi-input-regressions/02-crt_crt-geom.cgp/` |
 | NTSC — `hlsl/ntsc/ntsc.cgp` | filter/wrap | **PASS** — post-fix fresh process, exact path, zero documented failure signatures, acceptable composite, normal shutdown. | `runtime-kodi-input-regressions/03-ntsc_ntsc.cgp/` |
 | Game Boy — `hlsl/cgp/gameboy-screen-grid.cgp` | none | **PASS** — post-fix fresh process, exact path, zero documented failure signatures, acceptable composite, normal shutdown. | `runtime-kodi-input-regressions/04-cgp_gameboy-screen-grid.cgp/` |
+
+The five stock-pass border presets were tested separately on 2026-09-08. Those runs were isolated launches, not live-switch tests or a rerun of the four regression presets above. Their reviewed evidence is under `../2026-08-29-final-pass-absolute-fbo-scaling/runtime-stock-pass-752e045-visible/`.
