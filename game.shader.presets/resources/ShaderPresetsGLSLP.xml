@@ -41,6 +41,26 @@
         <name>xBR-mlv4</name>
     </preset>
     <preset>
+        <path>glsl/xbr/super-2xbr-3d-2p.glslp</path>
+        <folder>xBR</folder>
+        <name>2xBR 3D</name>
+    </preset>
+    <preset>
+        <path>glsl/xbr/super-2xbr-3d-3p-smoother.glslp</path>
+        <folder>xBR</folder>
+        <name>2xBR 3D (smoother)</name>
+    </preset>
+    <preset>
+        <path>glsl/xbr/super-4xbr-3d-4p.glslp</path>
+        <folder>xBR</folder>
+        <name>4xBR 3D</name>
+    </preset>
+    <preset>
+        <path>glsl/xbr/super-4xbr-3d-6p-smoother.glslp</path>
+        <folder>xBR</folder>
+        <name>4xBR 3D (smoother)</name>
+    </preset>
+    <preset>
         <path>glsl/xbrz/4xbrz-linear.glslp</path>
         <folder>xBRZ</folder>
         <name>4xBRZ Linear</name>
@@ -66,14 +86,24 @@
         <name>CRT Hyllian</name>
     </preset>
     <preset>
+        <path>glsl/crt/crt-hyllian-3d.glslp</path>
+        <folder>CRT</folder>
+        <name>CRT Hyllian 3D</name>
+    </preset>
+    <preset>
+        <path>glsl/crt/crt-lottes-alpha.glslp</path>
+        <folder>CRT</folder>
+        <name>CRT Lottes</name>
+    </preset>
+    <preset>
+        <path>glsl/crt/crt-royale.glslp</path>
+        <folder>CRT</folder>
+        <name>CRT Royale</name>
+    </preset>
+    <preset>
         <path>glsl/crt/crtglow_lanczos.glslp</path>
         <folder>CRT</folder>
         <name>CRT Glow Lanczos</name>
-    </preset>
-    <preset>
-        <path>glsl/crt/zfast_crt_geo_svideo.glslp</path>
-        <folder>CRT</folder>
-        <name>CRT Zfast</name>
     </preset>
     <preset>
         <path>glsl/crt/crt-geom.glslp</path>
@@ -81,9 +111,9 @@
         <name>CRT Geom</name>
     </preset>
     <preset>
-        <path>glsl/crt/crt-lottes-alpha.glslp</path>
+        <path>glsl/crt/zfast_crt_geo_svideo.glslp</path>
         <folder>CRT</folder>
-        <name>CRT Lottes</name>
+        <name>CRT Zfast</name>
     </preset>
     <preset>
         <path>glsl/crt/crt-consumer.glslp</path>
