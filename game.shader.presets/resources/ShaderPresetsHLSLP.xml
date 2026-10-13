@@ -1,21 +1,6 @@
 <?xml version="1.0" ?>
 <presets>
     <preset>
-        <path>hlsl/scalehq/4xScaleHQ.cgp</path>
-        <folder>Scale</folder>
-        <name>4x ScaleHQ</name>
-    </preset>
-    <preset>
-        <path>hlsl/hqx/single-pass/hq2x.cgp</path>
-        <folder>Scale</folder>
-        <name>HQ2x</name>
-    </preset>
-    <preset>
-        <path>hlsl/sabr/sabr-v3.0.cgp</path>
-        <folder>Scale</folder>
-        <name>SABR v3.0</name>
-    </preset>
-    <preset>
         <path>hlsl/scalenx/scale2x.cgp</path>
         <folder>Scale</folder>
         <name>Scale 2x</name>
@@ -26,19 +11,29 @@
         <name>Scale 2x Plus</name>
     </preset>
     <preset>
+        <path>hlsl/hqx/single-pass/hq2x.cgp</path>
+        <folder>HQx</folder>
+        <name>HQ2x</name>
+    </preset>
+    <preset>
+        <path>hlsl/scalehq/4xScaleHQ.cgp</path>
+        <folder>ScaleHQ</folder>
+        <name>4x ScaleHQ</name>
+    </preset>
+    <preset>
         <path>hlsl/eagle/super-eagle.cgp</path>
         <folder>Eagle</folder>
         <name>Super Eagle</name>
     </preset>
     <preset>
-        <path>hlsl/anti-aliasing/aa-shader-4.o-level2.cgp</path>
-        <folder>Anti-Aliasing</folder>
-        <name>AA Shader 4.0 Level 2</name>
-    </preset>
-    <preset>
         <path>hlsl/anti-aliasing/advanced-aa.cgp</path>
         <folder>Anti-Aliasing</folder>
         <name>Advanced AA</name>
+    </preset>
+    <preset>
+        <path>hlsl/anti-aliasing/aa-shader-4.o-level2.cgp</path>
+        <folder>Anti-Aliasing</folder>
+        <name>AA 4.0 Level 2</name>
     </preset>
     <preset>
         <path>hlsl/anti-aliasing/fx-aa.cgp</path>
@@ -49,36 +44,6 @@
         <path>hlsl/anti-aliasing/reverse-aa.cgp</path>
         <folder>Anti-Aliasing</folder>
         <name>Reverse AA</name>
-    </preset>
-    <preset>
-        <path>hlsl/borders/color-grid.cgp</path>
-        <folder>Borders</folder>
-        <name>Color Grid</name>
-    </preset>
-    <preset>
-        <path>hlsl/borders/gameboy-player/gameboy-player.cgp</path>
-        <folder>Borders</folder>
-        <name>Game Boy Player</name>
-    </preset>
-    <preset>
-        <path>hlsl/borders/gameboy-player/gameboy-player-gba-color.cgp</path>
-        <folder>Borders</folder>
-        <name>Game Boy Player + GBA Color</name>
-    </preset>
-    <preset>
-        <path>hlsl/borders/sgb/sgb.cgp</path>
-        <folder>Borders</folder>
-        <name>Super Game Boy</name>
-    </preset>
-    <preset>
-        <path>hlsl/borders/sgba/sgba.cgp</path>
-        <folder>Borders</folder>
-        <name>Super Game Boy Advance</name>
-    </preset>
-    <preset>
-        <path>hlsl/borders/sgba/sgba-gba-color.cgp</path>
-        <folder>Borders</folder>
-        <name>Super Game Boy Advance + GBA Color</name>
     </preset>
     <preset>
         <path>hlsl/bicubic/bicubic-sharp.cgp</path>
@@ -104,6 +69,11 @@
         <path>hlsl/interpolation/sharp-bilinear.cgp</path>
         <folder>Interpolation</folder>
         <name>Sharp Bilinear</name>
+    </preset>
+    <preset>
+        <path>hlsl/sabr/sabr-v3.0.cgp</path>
+        <folder>SABR</folder>
+        <name>SABR v3.0</name>
     </preset>
     <preset>
         <path>hlsl/xbr/xbr-lv2-fast.cgp</path>
@@ -249,5 +219,35 @@
         <path>hlsl/cgp/retro-v2+gba-color.cgp</path>
         <folder>Handheld</folder>
         <name>Retro v2 + GBA Color</name>
+    </preset>
+    <preset>
+        <path>hlsl/borders/gameboy-player/gameboy-player.cgp</path>
+        <folder>Borders</folder>
+        <name>Game Boy Player</name>
+    </preset>
+    <preset>
+        <path>hlsl/borders/gameboy-player/gameboy-player-gba-color.cgp</path>
+        <folder>Borders</folder>
+        <name>Game Boy Player + GBA Color</name>
+    </preset>
+    <preset>
+        <path>hlsl/borders/sgb/sgb.cgp</path>
+        <folder>Borders</folder>
+        <name>Super Game Boy</name>
+    </preset>
+    <preset>
+        <path>hlsl/borders/sgba/sgba.cgp</path>
+        <folder>Borders</folder>
+        <name>Super Game Boy Advance</name>
+    </preset>
+    <preset>
+        <path>hlsl/borders/sgba/sgba-gba-color.cgp</path>
+        <folder>Borders</folder>
+        <name>Super Game Boy Advance + GBA Color</name>
+    </preset>
+    <preset>
+        <path>hlsl/borders/color-grid.cgp</path>
+        <folder>Borders</folder>
+        <name>Color Grid</name>
     </preset>
 </presets>
