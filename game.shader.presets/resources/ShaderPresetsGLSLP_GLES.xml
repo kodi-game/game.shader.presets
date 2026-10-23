@@ -12,13 +12,13 @@
     </preset>
     <preset>
         <path>glsl/eagle/super-eagle.glslp</path>
-        <folder>Eagle</folder>
+        <folder>Scale</folder>
         <name>Super Eagle</name>
     </preset>
     <preset>
-        <path>glsl/anti-aliasing/advanced-aa.glslp</path>
-        <folder>Anti-Aliasing</folder>
-        <name>Advanced AA</name>
+        <path>glsl/interpolation/sharp-bilinear.glslp</path>
+        <folder>Scale</folder>
+        <name>Sharp Bilinear</name>
     </preset>
     <preset>
         <path>glsl/xbr/xbr-lv3.glslp</path>
@@ -31,14 +31,39 @@
         <name>xBR-mlv4</name>
     </preset>
     <preset>
+        <path>glsl/xbr/super-2xbr-3d-2p.glslp</path>
+        <folder>xBR</folder>
+        <name>2xBR 3D</name>
+    </preset>
+    <preset>
+        <path>glsl/xbr/super-2xbr-3d-3p-smoother.glslp</path>
+        <folder>xBR</folder>
+        <name>2xBR 3D (smoother)</name>
+    </preset>
+    <preset>
+        <path>glsl/xbr/super-4xbr-3d-4p.glslp</path>
+        <folder>xBR</folder>
+        <name>4xBR 3D</name>
+    </preset>
+    <preset>
+        <path>glsl/xbr/super-4xbr-3d-6p-smoother.glslp</path>
+        <folder>xBR</folder>
+        <name>4xBR 3D (smoother)</name>
+    </preset>
+    <preset>
         <path>glsl/xbrz/4xbrz-linear.glslp</path>
-        <folder>xBRZ</folder>
+        <folder>xBR</folder>
         <name>4xBRZ Linear</name>
     </preset>
     <preset>
         <path>glsl/xbrz/xbrz-freescale.glslp</path>
-        <folder>xBRZ</folder>
+        <folder>xBR</folder>
         <name>xBRZ Freescale</name>
+    </preset>
+    <preset>
+        <path>glsl/anti-aliasing/advanced-aa.glslp</path>
+        <folder>Anti-Aliasing</folder>
+        <name>Advanced AA</name>
     </preset>
     <preset>
         <path>glsl/crt/crt-easymode.glslp</path>
@@ -51,6 +76,11 @@
         <name>CRT EasyMode Halation</name>
     </preset>
     <preset>
+        <path>glsl/crt/crt-lottes.glslp</path>
+        <folder>CRT</folder>
+        <name>CRT Lottes</name>
+    </preset>
+    <preset>
         <path>glsl/crt/crtglow_lanczos.glslp</path>
         <folder>CRT</folder>
         <name>CRT Glow Lanczos</name>
@@ -61,14 +91,14 @@
         <name>CRT Zfast</name>
     </preset>
     <preset>
+        <path>glsl/crt/crt-pi.glslp</path>
+        <folder>CRT</folder>
+        <name>CRT Pi</name>
+    </preset>
+    <preset>
         <path>glsl/crt/crt-geom.glslp</path>
         <folder>CRT</folder>
         <name>CRT Geom</name>
-    </preset>
-    <preset>
-        <path>glsl/crt/crt-lottes.glslp</path>
-        <folder>CRT</folder>
-        <name>CRT Lottes</name>
     </preset>
     <preset>
         <path>glsl/crt/crt-consumer.glslp</path>
@@ -77,12 +107,12 @@
     </preset>
     <preset>
         <path>glsl/ntsc/ntsc-svideo.glslp</path>
-        <folder>NTSC</folder>
+        <folder>Analog</folder>
         <name>NTSC</name>
     </preset>
     <preset>
         <path>glsl/vhs/vhs.glslp</path>
-        <folder>VHS</folder>
+        <folder>Analog</folder>
         <name>VHS</name>
     </preset>
     <preset>
@@ -91,23 +121,38 @@
         <name>Dot</name>
     </preset>
     <preset>
+        <path>glsl/handheld/lcd-grid-v2.glslp</path>
+        <folder>Handheld</folder>
+        <name>LCD Grid v2</name>
+    </preset>
+    <preset>
+        <path>glsl/handheld/lcd-grid-v2-gbc-color.glslp</path>
+        <folder>Handheld</folder>
+        <name>LCD Grid v2 (GBC)</name>
+    </preset>
+    <preset>
+        <path>glsl/handheld/lcd-grid-v2-gba-color.glslp</path>
+        <folder>Handheld</folder>
+        <name>LCD Grid v2 (GBA)</name>
+    </preset>
+    <preset>
         <path>glsl/handheld/lcd3x.glslp</path>
         <folder>Handheld</folder>
         <name>LCD3x</name>
     </preset>
     <preset>
         <path>glsl/handheld/console-border/gg-4x.glslp</path>
-        <folder>Console</folder>
+        <folder>Bezels</folder>
         <name>Game Gear 4x</name>
     </preset>
     <preset>
         <path>glsl/handheld/console-border/gbc-4x.glslp</path>
-        <folder>Console</folder>
+        <folder>Bezels</folder>
         <name>Game Boy Color 4x</name>
     </preset>
     <preset>
         <path>glsl/handheld/console-border/psp-2x.glslp</path>
-        <folder>Console</folder>
+        <folder>Bezels</folder>
         <name>PlayStation Portable 2x</name>
     </preset>
     <preset>
