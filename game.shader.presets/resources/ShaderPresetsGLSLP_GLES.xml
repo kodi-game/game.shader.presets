@@ -16,6 +16,11 @@
         <name>Super Eagle</name>
     </preset>
     <preset>
+        <path>glsl/interpolation/sharp-bilinear.glslp</path>
+        <folder>Scale</folder>
+        <name>Sharp Bilinear</name>
+    </preset>
+    <preset>
         <path>glsl/xbr/xbr-lv3.glslp</path>
         <folder>xBR</folder>
         <name>xBR-lv3</name>
@@ -86,6 +91,11 @@
         <name>CRT Zfast</name>
     </preset>
     <preset>
+        <path>glsl/crt/crt-pi.glslp</path>
+        <folder>CRT</folder>
+        <name>CRT Pi</name>
+    </preset>
+    <preset>
         <path>glsl/crt/crt-geom.glslp</path>
         <folder>CRT</folder>
         <name>CRT Geom</name>
@@ -109,6 +119,21 @@
         <path>glsl/handheld/dot.glslp</path>
         <folder>Handheld</folder>
         <name>Dot</name>
+    </preset>
+    <preset>
+        <path>glsl/handheld/lcd-grid-v2.glslp</path>
+        <folder>Handheld</folder>
+        <name>LCD Grid v2</name>
+    </preset>
+    <preset>
+        <path>glsl/handheld/lcd-grid-v2-gbc-color.glslp</path>
+        <folder>Handheld</folder>
+        <name>LCD Grid v2 (GBC)</name>
+    </preset>
+    <preset>
+        <path>glsl/handheld/lcd-grid-v2-gba-color.glslp</path>
+        <folder>Handheld</folder>
+        <name>LCD Grid v2 (GBA)</name>
     </preset>
     <preset>
         <path>glsl/handheld/lcd3x.glslp</path>
