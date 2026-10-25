@@ -1,4 +1,4 @@
-#version 130
+#version 150
 
 /////////////////////////////  GPL LICENSE NOTICE  /////////////////////////////
 
@@ -2799,7 +2799,7 @@ void main()
     //  resize is used instead of tex2Dblur3x3_resize (which samples between
     //  texels even for upsizing).
     const float2 dxdy_min_scale = ORIG_LINEARIZEDvideo_size/output_size;
-    const float2 texture_size_inv = float2(1.0, 1.0)/ORIG_LINEARIZEDtexture_size;
+    texture_size_inv = float2(1.0, 1.0)/ORIG_LINEARIZEDtexture_size;
     if(bloom_approx_filter > 1.5)   //  4x4 true Gaussian resize
     {
         //  For upsizing, we'll snap to texels and sample the nearest 4.

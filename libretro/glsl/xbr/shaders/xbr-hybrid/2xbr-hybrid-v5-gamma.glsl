@@ -1,4 +1,4 @@
-#version 130
+#version 150
 
 /*
    Hyllian's 2xBR v3.8c+ReverseAA (squared) Shader - Dithering preserved

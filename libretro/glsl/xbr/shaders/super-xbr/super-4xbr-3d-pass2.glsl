@@ -1,4 +1,4 @@
-#version 130
+#version 150
 
 /*
    
@@ -287,8 +287,8 @@ void main()
 
 
 	/* Anti-ringing code. */
-	vec3 min_sample = min4( E, F, H, I ) + (1-XBR_ANTI_RINGING)*mix((P2-H)*(F-P1), (P0-E)*(I-P3), step(0.0, d_edge));
-	vec3 max_sample = max4( E, F, H, I ) - (1-XBR_ANTI_RINGING)*mix((P2-H)*(F-P1), (P0-E)*(I-P3), step(0.0, d_edge));
+	vec3 min_sample = min4( E, F, H, I ) + (1.-XBR_ANTI_RINGING)*mix((P2-H)*(F-P1), (P0-E)*(I-P3), step(0.0, d_edge));
+	vec3 max_sample = max4( E, F, H, I ) - (1.-XBR_ANTI_RINGING)*mix((P2-H)*(F-P1), (P0-E)*(I-P3), step(0.0, d_edge));
 
 	color = clamp(color, min_sample, max_sample);
 
