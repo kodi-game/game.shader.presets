@@ -1,4 +1,4 @@
-shaders = "2"
+shaders = "3"
 shader0 = "../../handheld/shaders/color/gba-color.glsl"
 shader1 = "../resources/imgborder-sgba.glsl"
 
@@ -10,6 +10,8 @@ scale_type_x1 = "absolute"
 scale_x1 = "320"
 scale_type_y1 = "absolute"
 scale_y1 = "240"
+
+shader2 = "../../stock.glsl"
 
 parameters = "box_scale;in_res_x;in_res_y"
 box_scale = "1.000000"
