@@ -1,4 +1,4 @@
-#version 130
+#version 150
 
 // Parameter lines go here:
 #pragma parameter RSUBPIX_R  "Colour of R subpixel: R" 1.0 0.0 1.0 0.01
