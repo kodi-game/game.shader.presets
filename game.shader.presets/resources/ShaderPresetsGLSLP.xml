@@ -141,6 +141,66 @@
         <name>Amiga A520</name>
     </preset>
     <preset>
+        <path>glsl/lola-retro/curved/consumer-tv-composite.glslp</path>
+        <folder>Lola Retro</folder>
+        <name>Lola Composite TV</name>
+    </preset>
+    <preset>
+        <path>glsl/lola-retro/flat/consumer-tv-composite.glslp</path>
+        <folder>Lola Retro</folder>
+        <name>Lola Composite TV (Flat)</name>
+    </preset>
+    <preset>
+        <path>glsl/lola-retro/curved/consumer-tv-scart-rgb.glslp</path>
+        <folder>Lola Retro</folder>
+        <name>Lola SCART RGB TV</name>
+    </preset>
+    <preset>
+        <path>glsl/lola-retro/flat/consumer-tv-scart-rgb.glslp</path>
+        <folder>Lola Retro</folder>
+        <name>Lola SCART RGB TV (Flat)</name>
+    </preset>
+    <preset>
+        <path>glsl/lola-retro/curved/trinitron-s-video.glslp</path>
+        <folder>Lola Retro</folder>
+        <name>Lola Trinitron S-Video</name>
+    </preset>
+    <preset>
+        <path>glsl/lola-retro/flat/trinitron-s-video.glslp</path>
+        <folder>Lola Retro</folder>
+        <name>Lola Trinitron S-Video (Flat)</name>
+    </preset>
+    <preset>
+        <path>glsl/lola-retro/curved/studio-monitor-rgb.glslp</path>
+        <folder>Lola Retro</folder>
+        <name>Lola Studio Monitor RGB</name>
+    </preset>
+    <preset>
+        <path>glsl/lola-retro/flat/studio-monitor-rgb.glslp</path>
+        <folder>Lola Retro</folder>
+        <name>Lola Studio Monitor RGB (Flat)</name>
+    </preset>
+    <preset>
+        <path>glsl/lola-retro/curved/pc-monitor-vga.glslp</path>
+        <folder>Lola Retro</folder>
+        <name>Lola PC Monitor VGA</name>
+    </preset>
+    <preset>
+        <path>glsl/lola-retro/flat/pc-monitor-vga.glslp</path>
+        <folder>Lola Retro</folder>
+        <name>Lola PC Monitor VGA (Flat)</name>
+    </preset>
+    <preset>
+        <path>glsl/lola-retro/curved/amiga-1084s.glslp</path>
+        <folder>Lola Retro</folder>
+        <name>Lola Amiga 1084S</name>
+    </preset>
+    <preset>
+        <path>glsl/lola-retro/flat/amiga-1084s.glslp</path>
+        <folder>Lola Retro</folder>
+        <name>Lola Amiga 1084S (Flat)</name>
+    </preset>
+    <preset>
         <path>glsl/handheld/dot.glslp</path>
         <folder>Handheld</folder>
         <name>Dot</name>
